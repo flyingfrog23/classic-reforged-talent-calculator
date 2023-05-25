@@ -199,6 +199,8 @@ export const data: TalentData = {
       },
     },
   },
+
+  //
   Marksmanship: {
     name: "Marksmanship",
     background: backgrounds["marksmanship"],
