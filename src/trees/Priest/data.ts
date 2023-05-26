@@ -222,20 +222,6 @@ export const data: TalentData = {
           10,
         ]}%.`,
       },
-      "Mental Agility": {
-        name: "Mental Agility",
-        pos: "a3",
-        icon: icons["ability_hibernation"],
-        maxRank: 5,
-        reqPoints: 0,
-        description: talentText`Reduces the Mana cost of your instant cast spells by ${[
-          10,
-          20,
-          30,
-          40,
-          50,
-        ]}%`,
-      },
       "Holy Focus": {
         name: "Healing Focus",
         pos: "b1",
@@ -408,6 +394,20 @@ export const data: TalentData = {
     background: backgrounds["shadow"],
     icon: icons["spell_shadow_shadowwordpain"],
     talents: {
+      "Mental Agility": {
+        name: "Mental Agility",
+        pos: "a1",
+        icon: icons["ability_hibernation"],
+        maxRank: 5,
+        reqPoints: 0,
+        description: talentText`Reduces the Mana cost of your instant cast spells by ${[
+          10,
+          20,
+          30,
+          40,
+          50,
+        ]}%`,
+      },
       "Spirit Tap": {
         name: "Spirit Tap",
         pos: "a2",
