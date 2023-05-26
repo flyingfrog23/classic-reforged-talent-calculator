@@ -289,7 +289,7 @@ export const data: TalentData = {
         pos: "c3",
         icon: icons["spell_holy_wordfortitude"],
         maxRank: 2,
-        reqPoints: 0,
+        reqPoints: 10,
         description: talentText`Increases the effect of your Power Word: Fortitude and Prayer of Fortitude spells by ${[
           15,
           30,
