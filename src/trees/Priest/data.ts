@@ -40,6 +40,20 @@ export const data: TalentData = {
           50,
         ]}%.`,
       },
+      "Martyrdom": {
+        name: "Martyrdom",
+        pos: "12",
+        icon: icons["spell_nature_tranquility"],
+        maxRank: 2,
+        reqPoints: 5,
+        description: talentText`Gives you a ${[
+          50,
+          100,
+        ]}% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike. The Focused Casting effect prevents you from losing casting time when taking damage and increases resistance to Interrupt effects by ${[
+          10,
+          20,
+        ]}%.`,
+      },
       "Divine Fury": {
         name: "Divine Fury",
         pos: "b2",
@@ -64,20 +78,6 @@ export const data: TalentData = {
           15,
           30,
           45,
-        ]}%.`,
-      },
-      "Martyrdom": {
-        name: "Martyrdom",
-        pos: "b4",
-        icon: icons["spell_nature_tranquility"],
-        maxRank: 2,
-        reqPoints: 5,
-        description: talentText`Gives you a ${[
-          50,
-          100,
-        ]}% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike. The Focused Casting effect prevents you from losing casting time when taking damage and increases resistance to Interrupt effects by ${[
-          10,
-          20,
         ]}%.`,
       },
       "Holy Nova": {
@@ -197,17 +197,6 @@ export const data: TalentData = {
     background: backgrounds["holy"],
     icon: icons["spell_holy_holybolt"],
     talents: {
-      "Improved Power Word: Fortitude": {
-        name: "Improved Power Word: Fortitude",
-        pos: "a1",
-        icon: icons["spell_holy_wordfortitude"],
-        maxRank: 2,
-        reqPoints: 0,
-        description: talentText`Increases the effect of your Power Word: Fortitude and Prayer of Fortitude spells by ${[
-          15,
-          30,
-        ]}%.`,
-      },
       "Spell Warding": {
         name: "Spell Warding",
         pos: "a2",
@@ -220,6 +209,20 @@ export const data: TalentData = {
           6,
           8,
           10,
+        ]}%.`,
+      },
+      "Holy Specialization": {
+        name: "Holy Specialization",
+        pos: "a3",
+        icon: icons["spell_holy_sealofsalvation"],
+        maxRank: 5,
+        reqPoints: 0,
+        description: talentText`Increases the critical effect chance of your Holy spells by ${[
+          1,
+          2,
+          3,
+          4,
+          5,
         ]}%.`,
       },
       "Holy Focus": {
@@ -281,18 +284,15 @@ export const data: TalentData = {
           45,
         ]}% of the damage taken over 6 sec.`,
       },
-      "Holy Specialization": {
-        name: "Holy Specialization",
+      "Improved Power Word: Fortitude": {
+        name: "Improved Power Word: Fortitude",
         pos: "c3",
-        icon: icons["spell_holy_sealofsalvation"],
-        maxRank: 5,
-        reqPoints: 10,
-        description: talentText`Increases the critical effect chance of your Holy spells by ${[
-          2,
-          4,
-          6,
-          8,
-          10,
+        icon: icons["spell_holy_wordfortitude"],
+        maxRank: 2,
+        reqPoints: 0,
+        description: talentText`Increases the effect of your Power Word: Fortitude and Prayer of Fortitude spells by ${[
+          15,
+          30,
         ]}%.`,
       },
       "Inspiration": {
