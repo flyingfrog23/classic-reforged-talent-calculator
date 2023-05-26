@@ -106,9 +106,9 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 10,
         description: talentText`Increases the critical strike chance of your Arcane Explosion spell by an additional ${[
-          2,
-          4,
-          6,
+          5,
+          10,
+          15,
         ]}%.`,
       },
       "Arcane Meditation": {
