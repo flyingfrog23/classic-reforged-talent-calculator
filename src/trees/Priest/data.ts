@@ -320,7 +320,7 @@ export const data: TalentData = {
       },
       "Improved Prayer of Healing": {
         name: "Improved Prayer of Healing",
-        pos: "d1",
+        pos: "d2",
         icon: icons["spell_holy_prayerofhealing02"],
         maxRank: 2,
         reqPoints: 20,
