@@ -12,18 +12,18 @@ export const data: TalentData = {
     background: backgrounds["holy"],
     icon: icons["spell_holy_holybolt"],
     talents: {
-      "Divine Strength": {
-        name: "Divine Strength",
+      "Benediction": {
+        name: "Benediction",
         pos: "a2",
-        icon: icons["spell_holy_auraoflight"],
+        icon: icons["spell_frost_windwalkon"],
         maxRank: 5,
         reqPoints: 0,
-        description: talentText`Increases your Strength by ${[
-          2,
-          4,
-          6,
-          8,
-          10,
+        description: talentText`Reduces the Mana cost of your Judgement and Seal spells by ${[
+          15,
+          30,
+          45,
+          60,
+          75,
         ]}%.`,
       },
       "Divine Intellect": {
@@ -40,6 +40,18 @@ export const data: TalentData = {
           10,
         ]}%.`,
       },
+      "Healing Light": {
+        name: "Healing Light",
+        pos: "b1",
+        icon: icons["spell_holy_holybolt"],
+        maxRank: 3,
+        reqPoints: 5,
+        description: talentText`Increases the amount healed by your Holy Light and Flash of Light spells by ${[
+          4,
+          8,
+          12,
+        ]}%.`,
+      },
       "Spiritual Focus": {
         name: "Spiritual Focus",
         pos: "b2",
@@ -54,39 +66,43 @@ export const data: TalentData = {
           70,
         ]}% chance to not lose casting time when you take damage.`,
       },
-      "Improved Seal of Righteousness": {
-        name: "Improved Seal of Righteousness",
+      "Guardian's Favor": {
+        name: "Guardian's Favor",
         pos: "b3",
-        icon: icons["ability_thunderbolt"],
-        maxRank: 5,
+        icon: icons["spell_holy_sealofprotection"],
+        maxRank: 2,
         reqPoints: 5,
-        description: talentText`Increases the damage done by your Seal of Righteousness by ${[
+        description: talentText`Reduces the cooldown of your Blessing of Protection by ${[
+          60,
+          120,
+        ]} sec and increases the duration of your Blessing of Freedom by ${[
           3,
           6,
-          9,
-          12,
-          15,
-        ]}%.`,
+        ]} sec.`,
       },
-      "Healing Light": {
-        name: "Healing Light",
+      "Improved Concentration Aura": {
+        name: "Improved Concentration Aura",
         pos: "c1",
-        icon: icons["spell_holy_holybolt"],
+        icon: icons["spell_holy_mindsooth"],
         maxRank: 3,
         reqPoints: 10,
-        description: talentText`Increases the amount healed by your Holy Light and Flash of Light spells by ${[
-          4,
-          8,
-          12,
-        ]}%.`,
+        description: talentText`Increases the effect of your Concentration Aura by an additional ${[
+          5,
+          10,
+          15,
+        ]}% and gives all group members affected by the aura an additional ${[
+          5,
+          10,
+          15,
+        ]}% chance to resist Silence and Interrupt effects.`,
       },
-      "Consecration": {
-        name: "Consecration",
+      "Blessing of Kings": {
+        name: "Blessing of Kings",
         pos: "c2",
-        icon: icons["spell_holy_innerfire"],
+        icon: icons["spell_magic_magearmor"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Consecrates the land beneath the Paladin, doing 64 Holy damage over 8 sec to enemies who enter the area.`,
+        description: talentText`Places a Blessing on a friendly target, increasing total stats by 10% for 5 min. Players may only have one Blessing on them per Paladin at any one time.`,
       },
       "Improved Lay on Hands": {
         name: "Improved Lay on Hands",
@@ -102,17 +118,9 @@ export const data: TalentData = {
           20,
         ]} min.`,
       },
-      "Unyielding Faith": {
-        name: "Unyielding Faith",
-        pos: "c4",
-        icon: icons["spell_holy_unyieldingfaith"],
-        maxRank: 2,
-        reqPoints: 10,
-        description: talentText`Increases your chance to resist Fear and Disorient effects by an additional ${[
-          5,
-          10,
-        ]}%.`,
-      },
+//placeholder unyielding faith
+
+
       "Illumination": {
         name: "Illumination",
         pos: "d2",
@@ -155,9 +163,9 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 20,
         description: talentText`Increases the duration of your Judgement of Light and Judgement of Wisdom by ${[
-          10,
           20,
-          30,
+          40,
+          60,
         ]} sec.`,
       },
       "Holy Power": {
@@ -198,11 +206,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 0,
         description: talentText`Increases the armor bonus of your Devotion Aura by ${[
-          5,
           10,
-          15,
           20,
-          25,
+          30,
+          40,
+          50,
         ]}%.`,
       },
       "Redoubt": {
@@ -211,39 +219,47 @@ export const data: TalentData = {
         icon: icons["ability_defend"],
         maxRank: 5,
         reqPoints: 0,
-        description: talentText`Increases your chance to block attacks with your shield by ${[
-          6,
-          12,
-          18,
-          24,
-          30,
-        ]}% after being the victim of a critical strike. Lasts 10 sec or 5 blocks.`,
-      },
-      "Precision": {
-        name: "Precision",
-        pos: "b1",
-        icon: icons["ability_rogue_ambush"],
-        maxRank: 3,
-        reqPoints: 5,
-        description: talentText`Increases your chance to hit with melee weapons by ${[
+        description: talentText`Increases your chance to block attacks with a shield by ${[
           1,
           2,
           3,
+          4,
+          5,
+        ]}% and increases the amount blocked by ${[
+          5,
+          10,
+          15,
+          20,
+          25
         ]}%.`,
       },
-      "Guardian's Favor": {
-        name: "Guardian's Favor",
-        pos: "b2",
-        icon: icons["spell_holy_sealofprotection"],
-        maxRank: 2,
+      "Deflection": {
+        name: "Deflection",
+        pos: "b1",
+        icon: icons["ability_parry"],
+        maxRank: 5,
         reqPoints: 5,
-        description: talentText`Reduces the cooldown of your Blessing of Protection by ${[
-          60,
-          120,
-        ]} sec and increases the duration of your Blessing of Freedom by ${[
+        description: talentText`Increases your Parry chance by ${[
+          1,
+          2,
           3,
-          6,
-        ]} sec.`,
+          4,
+          5,
+        ]}%.`,
+      },
+      "Improved Seal of Righteousness": {
+        name: "Improved Seal of Righteousness",
+        pos: "b2",
+        icon: icons["ability_thunderbolt"],
+        maxRank: 5,
+        reqPoints: 5,
+        description: talentText`Increases the damage done by your Seal of Righteousness by ${[
+          4,
+          8,
+          12,
+          16,
+          20,
+        ]}%.`,
       },
       "Toughness": {
         name: "Toughness",
@@ -259,13 +275,13 @@ export const data: TalentData = {
           10,
         ]}%.`,
       },
-      "Blessing of Kings": {
-        name: "Blessing of Kings",
+      "Consecration": {
+        name: "Consecration",
         pos: "c1",
-        icon: icons["spell_magic_magearmor"],
+        icon: icons["spell_holy_innerfire"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Places a Blessing on a friendly target, increasing total stats by 10% for 5 min. Players may only have one Blessing on them per Paladin at any one time.`,
+        description: talentText`Consecrates the land beneath the Paladin, doing 64 Holy damage over 8 sec to enemies who enter the area.`,
       },
       "Improved Righteous Fury": {
         name: "Improved Righteous Fury",
@@ -319,21 +335,16 @@ export const data: TalentData = {
           15,
         ]} sec.`,
       },
-      "Improved Concentration Aura": {
-        name: "Improved Concentration Aura",
+      "Improved Retribution Aura": {
+        name: "Improved Retribution Aura",
         pos: "d3",
-        icon: icons["spell_holy_mindsooth"],
-        maxRank: 3,
+        icon: icons["spell_holy_auraoflight"],
+        maxRank: 2,
         reqPoints: 15,
-        description: talentText`Increases the effect of your Concentration Aura by an additional ${[
-          5,
-          10,
-          15,
-        ]}% and gives all group members affected by the aura an additional ${[
-          5,
-          10,
-          15,
-        ]}% chance to resist Silence and Interrupt effects.`,
+        description: talentText`Increases the damage done by your Retribution Aura by ${[
+          78,
+          150,
+        ]}%.`,
       },
       "Blessing of Sanctuary": {
         name: "Blessing of Sanctuary",
@@ -364,11 +375,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 25,
         description: talentText`Increases the damage you deal with one-handed melee weapons by ${[
-          2,
-          4,
-          6,
-          8,
+          5,
           10,
+          15,
+          20,
+          25,
         ]}%.`,
       },
       "Holy Shield": {
@@ -402,18 +413,18 @@ export const data: TalentData = {
           20,
         ]}%.`,
       },
-      "Benediction": {
-        name: "Benediction",
+      "Divine Strength": {
+        name: "Divine Strength",
         pos: "a3",
-        icon: icons["spell_frost_windwalkon"],
+        icon: icons["ability_golemthunderclap"],
         maxRank: 5,
         reqPoints: 0,
-        description: talentText`Reduces the Mana cost of your Judgement and Seal spells by ${[
-          3,
+        description: talentText`Increases your Strength by ${[
+          2,
+          4,
           6,
-          9,
-          12,
-          15,
+          8,
+          10,
         ]}%.`,
       },
       "Improved Judgement": {
@@ -439,19 +450,28 @@ export const data: TalentData = {
           15,
         ]}%.`,
       },
-      "Deflection": {
-        name: "Deflection",
+      "Precision": {
+        name: "Precision",
         pos: "b3",
-        icon: icons["ability_parry"],
-        maxRank: 5,
+        icon: icons["ability_rogue_ambush"],
+        maxRank: 3,
         reqPoints: 5,
-        description: talentText`Increases your Parry chance by ${[
-          1,
+        description: talentText`Increases your chance to hit with melee weapons by ${[
           2,
-          3,
           4,
-          5,
+          6,
         ]}%.`,
+      },
+      "Pursuit of Justice": {
+        name: "Pursuit of Justice",
+        pos: "b4",
+        icon: icons["spell_holy_persuitofjustice"],
+        maxRank: 2,
+        reqPoints: 5,
+        description: talentText`Increases movement and mounted movement speed by ${[
+          5,
+          10,
+        ]}%. This does not stack with other movement speed increasing effects.`,
       },
       "Vindication": {
         name: "Vindication",
@@ -487,17 +507,6 @@ export const data: TalentData = {
         reqPoints: 10,
         description: talentText`Gives the Paladin a chance to deal Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 90 to 95 Holy damage, 137 to 146 if the target is stunned or incapacitated.`,
       },
-      "Pursuit of Justice": {
-        name: "Pursuit of Justice",
-        pos: "c4",
-        icon: icons["spell_holy_persuitofjustice"],
-        maxRank: 2,
-        reqPoints: 10,
-        description: talentText`Increases movement and mounted movement speed by ${[
-          4,
-          8,
-        ]}%. This does not stack with other movement speed increasing effects.`,
-      },
       "Eye for an Eye": {
         name: "Eye for an Eye",
         pos: "d1",
@@ -509,15 +518,15 @@ export const data: TalentData = {
           30,
         ]}% of the damage taken to the caster as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health.`,
       },
-      "Improved Retribution Aura": {
-        name: "Improved Retribution Aura",
+      "Unyielding Faith": {
+        name: "Unyielding Faith",
         pos: "d3",
-        icon: icons["spell_holy_auraoflight"],
+        icon: icons["spell_holy_unyieldingfaith"],
         maxRank: 2,
         reqPoints: 15,
-        description: talentText`Increases the damage done by your Retribution Aura by ${[
-          25,
-          50,
+        description: talentText`Increases your chance to resist Fear and Disorient effects by an additional ${[
+          5,
+          10,
         ]}%.`,
       },
       "Two-Handed Weapon Specialization": {
@@ -532,13 +541,13 @@ export const data: TalentData = {
           6,
         ]}%.`,
       },
-      "Sanctity Aura": {
-        name: "Sanctity Aura",
+      "Repentence": {
+        name: "Repentence",
         pos: "e3",
-        icon: icons["spell_holy_mindvision"],
+        icon: icons["spell_holy_prayerofhealing"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`Increases Holy damage done by party members within 30 yards by 10%. Players may only have one Aura on them per Paladin at any one time.`,
+        description: talentText`Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids.`,
       },
       "Vengence": {
         name: "Vengence",
@@ -556,13 +565,13 @@ export const data: TalentData = {
           15,
         ]}% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability.`,
       },
-      "Repentence": {
-        name: "Repentence",
+      "Sanctity Aura": {
+        name: "Sanctity Aura",
         pos: "g2",
-        icon: icons["spell_holy_prayerofhealing"],
+        icon: icons["spell_holy_mindvision"],
         maxRank: 1,
         reqPoints: 30,
-        description: talentText`Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids.`,
+        description: talentText`Increases Holy damage done by party members within 30 yards by 30%. Players may only have one Aura on them per Paladin at any one time.`,
       },
     },
   },

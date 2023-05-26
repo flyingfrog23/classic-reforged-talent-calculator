@@ -199,26 +199,24 @@ export const data: TalentData = {
       },
     },
   },
-
-  //
   Marksmanship: {
     name: "Marksmanship",
     background: backgrounds["marksmanship"],
     icon: icons["ability_marksmanship"],
     talents: {
-      "Improved Concussive Shot": {
-        name: "Improved Concussive Shot",
+      "Improved Serpent Sting": {
+        name: "Improved Serpent Sting",
         pos: "a2",
-        icon: icons["spell_frost_stun"],
+        icon: icons["ability_hunter_quickshot"],
         maxRank: 5,
         reqPoints: 0,
-        description: talentText`Gives your Concussive Shot a ${[
-          4,
-          8,
+        description: talentText`Increases the damage done by your Serpent Sting by ${[
+          3,
+          6,
+          9,
           12,
-          16,
-          20,
-        ]}% chance to stun the target for 3 sec.`,
+          15,
+        ]}%.`,
       },
       "Efficiency": {
         name: "Efficiency",
@@ -227,11 +225,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 0,
         description: talentText`Reduces the Mana cost of your Shots and Stings by ${[
-          2,
-          4,
-          6,
-          8,
           10,
+          20,
+          30,
+          40,
+          50,
         ]}%.`,
       },
       "Improved Hunter's Mark": {
@@ -277,38 +275,38 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 10,
         description: talentText`Reduces the cooldown of your Arcane Shot by ${[
-          0.2,
-          0.4,
-          0.6,
-          0.8,
-          1,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
         ]} sec.`,
       },
-      "Hawk Eye": {
-        name: "Hawk Eye",
+      "Improved Scorpid Sting": {
+        name: "Improved Scorpid Sting",
         pos: "c4",
-        icon: icons["ability_townwatch"],
+        icon: icons["ability_hunter_criticalshot"],
         maxRank: 3,
         reqPoints: 10,
-        description: talentText`Increases the range of your ranged weapons by ${[
-          2,
-          4,
-          6,
-        ]} yards.`,
+        description: talentText`Reduces the Stamina of targets affected by your Scorpid Sting by ${[
+          25,
+          50,
+          75,
+        ]}% of the amount of Strength reduced.`,
       },
-      "Improved Serpent Sting": {
-        name: "Improved Serpent Sting",
+      "Improved Concussive Shot": {
+        name: "Improved Concussive Shot",
         pos: "d2",
-        icon: icons["ability_hunter_quickshot"],
+        icon: icons["spell_frost_stun"],
         maxRank: 5,
         reqPoints: 15,
-        description: talentText`Increases the damage done by your Serpent Sting by ${[
-          2,
+        description: talentText`Gives your Concussive Shot a ${[
           4,
-          6,
           8,
-          10,
-        ]}%.`,
+          12,
+          16,
+          20,
+        ]}% chance to stun the target for 3 sec.`,
       },
       "Mortal Shots": {
         name: "Mortal Shots",
@@ -346,17 +344,17 @@ export const data: TalentData = {
           15,
         ]}%.`,
       },
-      "Improved Scorpid Sting": {
-        name: "Improved Scorpid Sting",
+      "Hawk Eye": {
+        name: "Hawk Eye",
         pos: "e3",
-        icon: icons["ability_hunter_criticalshot"],
+        icon: icons["ability_townwatch"],
         maxRank: 3,
         reqPoints: 20,
-        description: talentText`Reduces the Stamina of targets affected by your Scorpid Sting by ${[
-          10,
-          20,
-          30,
-        ]}% of the amount of Strength reduced.`,
+        description: talentText`Increases the range of your ranged weapons by ${[
+          2,
+          4,
+          6,
+        ]} yards.`,
       },
       "Ranged Weapon Specialization": {
         name: "Ranged Weapon Specialization",
@@ -435,6 +433,17 @@ export const data: TalentData = {
           5,
         ]}%.`,
       },
+      "Improved Feign Death": {
+        name: "Improved Feign Death",
+        pos: "a4",
+        icon: icons["ability_rogue_feigndeath"],
+        maxRank: 2,
+        reqPoints: 0,
+        description: talentText`Reduces the chance your Feign Death ability will be resisted by ${[
+          2,
+          4,
+        ]}%.`,
+      },
       "Entrapment": {
         name: "Entrapment",
         pos: "b1",
@@ -442,11 +451,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 5,
         description: talentText`Gives your Immolation Trap, Frost Trap, and Explosive Trap a ${[
-          5,
-          10,
-          15,
-          20,
-          25,
+          8,
+          16,
+          24,
+          32,
+          40,
         ]}% chance to entrap the target, preventing them from moving for 5 sec.`,
       },
       "Savage Strikes": {
@@ -456,8 +465,8 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 5,
         description: talentText`Increases the critical strike chance of Raptor Strike and Mongoose Bite by ${[
-          10,
           20,
+          40,
         ]}%.`,
       },
       "Improved Wing Clip": {
@@ -467,11 +476,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 5,
         description: talentText`Gives your Wing Clip ability a ${[
-          4,
-          8,
+          6,
           12,
-          16,
-          20,
+          18,
+          24,
+          30,
         ]}% chance to immobilize the target for 5 sec.`,
       },
       "Clever Traps": {
@@ -481,9 +490,9 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 10,
         description: talentText`Increases the duration of Freezing and Frost trap effects by ${[
-          15,
-          30,
-        ]}% and the damage of Immolation and Explosive trap by ${[15, 30]}%.`,
+          25,
+          50,
+        ]}% and the damage of Immolation and Explosive trap by ${[25, 50]}%.`,
       },
       "Survivalist": {
         name: "Survivalist",
@@ -499,7 +508,7 @@ export const data: TalentData = {
         icon: icons["ability_whirlwind"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`When activated, increases your Dodge and Parry chance by 25% for 10 sec.`,
+        description: talentText`When activated, increases your Dodge and Parry chance by 50% for 10 sec.`,
       },
       "Trap Mastery": {
         name: "Trap Mastery",
@@ -519,25 +528,14 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 15,
         description: talentText`Increases hit chance by ${[
-          1,
-          2,
-          3,
-        ]}% and increases the chance movement impairing effects will be resisted by an additional ${[
-          5,
-          10,
-          15,
-        ]}%`,
-      },
-      "Improved Feign Death": {
-        name: "Improved Feign Death",
-        pos: "d4",
-        icon: icons["ability_rogue_feigndeath"],
-        maxRank: 2,
-        reqPoints: 15,
-        description: talentText`Reduces the chance your Feign Death ability will be resisted by ${[
           2,
           4,
-        ]}%.`,
+          6,
+        ]}% and increases the chance movement impairing effects will be resisted by an additional ${[
+          10,
+          20,
+          30,
+        ]}%`,
       },
       "Killer Instinct": {
         name: "Killer Instinct",
@@ -546,9 +544,9 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 20,
         description: talentText`Increases your critical strike chance with all attacks by ${[
-          1,
           2,
-          3,
+          4,
+          6,
         ]}%`,
       },
       "Counterattack": {
@@ -583,7 +581,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Killer Instinct",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`A stinging shot that puts the target to sleep for 12 sec. Any damage will cancel the effect. When the target wakes up, the Sting causes 0 Nature damage over 12 sec. Only usable out of combat. Only one Sting per Hunter can be active on the target at a time.`,
+        description: talentText`A stinging shot that puts the target to sleep for 12 sec. Any damage will cancel the effect. When the target wakes up, the Sting causes 0 Nature damage over 12 sec. Only one Sting per Hunter can be active on the target at a time.`,
       },
     },
   },

@@ -183,9 +183,9 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 20,
         description: talentText`Reduce the Mana cost of your Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation spells by ${[
-          5,
-          10,
           15,
+          30,
+          45,
         ]}%.`,
       },
       "Moonfury": {
@@ -210,7 +210,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_forceofnature"],
         maxRank: 1,
         reqPoints: 30,
-        description: talentText`Transforms the Druid into Moonkin Form. While in this form the armor contribution from items is increased by 360% and all party members within 30 yards have their spell critical chance increased by 5%. The Moonkin can only cast Balance spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.`,
+        description: talentText`Transforms the Druid into Moonkin Form. While in this form the armor contribution from items is increased by 360% and all party members within 30 yards have their spell hit and spell critical chance increased by 3% and all resistances increased by 30. The Moonkin can only cast Balance spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.`,
       },
     },
   },
@@ -422,12 +422,6 @@ export const data: TalentData = {
           12,
           16,
           20,
-        ]}% and your chance to dodge and hit with melee attacks by ${[
-          1,
-          2,
-          3,
-          4,
-          5,
         ]}%. In addition, while in Bear or Dire Bear Form your Stamina is increased by ${[
           7,
           14,
@@ -448,7 +442,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_unyeildingstamina"],
         maxRank: 1,
         reqPoints: 30,
-        description: talentText`While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 45 yards by 5%`,
+        description: talentText`While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases dodge, hit and critical chance of all party members within 45 yards by 3%`,
       },
     },
   },
@@ -546,14 +540,6 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 10,
         description: talentText`Imbues the druid with natural energy. Each of the Druid's melee attacks has a chance of causing the caster to enter a Clearcasting state. The Clearcasting state reduces the Mana, Rage, or Energy cost of your next damage or healing spell or offensive ability by 100%. Lasts 10 min.`,
-      },
-      "Resurgence": {
-        name: "Resurgence",
-        pos: "c4",
-        icon: icons["spell_nature_regenerate"],
-        maxRank: 1,
-        reqPoints: 10,
-        description: talentText`Returns the spirit to the body, restoring a dead target to life with 65 health and 120 mana. Cannot be cast when in combat.`,
       },
       "Tranquil Spirit": {
         name: "Tranquil Spirit",

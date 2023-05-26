@@ -40,21 +40,10 @@ export const data: TalentData = {
           2,
         ]} sec.`,
       },
-      "Improved Curse of Weakness": {
-        name: "Improved Curse of Weakness",
-        pos: "b1",
-        icon: icons["spell_shadow_curseofmannoroth"],
-        maxRank: 3,
-        reqPoints: 5,
-        description: talentText`Increases the effect of your Curse of Weakness by ${[
-          6,
-          13,
-          20,
-        ]}%.`,
-      },
+//placeholder improved curse of weakness
       "Improved Drain Soul": {
         name: "Improved Drain Soul",
-        pos: "b2",
+        pos: "b1",
         icon: icons["spell_shadow_haunting"],
         maxRank: 2,
         reqPoints: 5,
@@ -65,7 +54,7 @@ export const data: TalentData = {
       },
       "Improved Life Tap": {
         name: "Improved Life Tap",
-        pos: "b3",
+        pos: "b2",
         icon: icons["spell_shadow_burningspirit"],
         maxRank: 2,
         reqPoints: 5,
@@ -76,16 +65,16 @@ export const data: TalentData = {
       },
       "Improved Drain Life": {
         name: "Improved Drain Life",
-        pos: "b4",
+        pos: "b3",
         icon: icons["spell_shadow_lifedrain02"],
         maxRank: 5,
         reqPoints: 5,
         description: talentText`Increases the Health drained by your Drain Life spell by ${[
-          2,
           4,
-          6,
           8,
-          10,
+          12,
+          16,
+          20,
         ]}%.`,
       },
       "Improved Curse of Agony": {
@@ -95,9 +84,9 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 10,
         description: talentText`Increases the damage done by your Curse of Agony by ${[
-          2,
-          4,
-          6,
+          5,
+          10,
+          15,
         ]}%.`,
       },
       "Fel Concentration": {
@@ -107,11 +96,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 10,
         description: talentText`Gives you a ${[
-          14,
-          28,
-          42,
-          56,
-          70,
+          20,
+          40,
+          60,
+          80,
+          100,
         ]}% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell.`,
       },
       "Amplify Curse": {
@@ -133,24 +122,17 @@ export const data: TalentData = {
           20,
         ]}%.`,
       },
-      "Nightfall": {
-        name: "Nightfall",
-        pos: "d2",
-        icon: icons["spell_shadow_twilight"],
-        maxRank: 2,
-        reqPoints: 15,
-        description: talentText`Gives your Corruption and Drain Life spells a ${[
-          2,
-          4,
-        ]}% chance to cause you to enter a Shadow Trance state after damaging the opponent. The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%.`,
-      },
+//placeholder Nightfall
       "Improved Drain Mana": {
         name: "Improved Drain Mana",
-        pos: "d4",
+        pos: "d2",
         icon: icons["spell_shadow_siphonmana"],
         maxRank: 2,
         reqPoints: 15,
-        description: talentText`Causes 15% of the Mana drained by your Drain Mana spell to damage the opponent.`,
+        description: talentText`Causes ${[
+          40,
+          80,
+        ]}% of the Mana drained by your Drain Mana spell to damage the opponent..`,
       },
       "Siphon Life": {
         name: "Siphon Life",
@@ -201,13 +183,13 @@ export const data: TalentData = {
           10,
         ]}%.`,
       },
-      "Dark Pact": {
-        name: "Dark Pact",
+      "Nightfall": {
+        name: "Nightfall",
         pos: "g2",
-        icon: icons["spell_shadow_darkritual"],
+        icon: icons["spell_shadow_twilight"],
         maxRank: 1,
         reqPoints: 30,
-        description: talentText`Drains 150 of your pet's Mana, returning 100% to you.`,
+        description: talentText`Gives your Corruption and Drain Life spells a 10% chance to cause you to enter a Shadow Trance state after damaging the opponent. The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%.`,
       },
     },
   },
@@ -260,8 +242,8 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 5,
         description: talentText`Increases the amount of Health transfered by your Health Funnel spell by ${[
-          10,
-          20,
+          50,
+          100,
         ]}%.`,
       },
       "Improved Voidwalker": {
@@ -283,11 +265,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 5,
         description: talentText`Increases the maximum Mana of your Imp, Voidwalker, Succubus, and Felhunter by ${[
-          3,
-          6,
-          9,
-          12,
+          5,
+          10,
           15,
+          20,
+          25,
         ]}%.`,
       },
       "Improved Succubus": {
@@ -321,11 +303,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 10,
         description: talentText`Increases the maximum Health of your Imp, Voidwalker, Succubus, and Felhutner by ${[
-          3,
-          6,
-          9,
-          12,
+          5,
+          10,
           15,
+          20,
+          25,
         ]}%.`,
       },
       "Master Summoner": {
@@ -355,6 +337,17 @@ export const data: TalentData = {
           20,
         ]}%.`,
       },
+      "Improved Firestone": {
+        name: "Improved Firestone",
+        pos: "d4",
+        icon: icons["inv_ammo_firetar"],
+        maxRank: 2,
+        reqPoints: 15,
+        description: talentText`Increases the bonus Fire damage from Firestones and the Firestone effect by ${[
+          75,
+          150,
+        ]}%.`,
+      },
       "Improved Enslave Demon": {
         name: "Improved Enslave Demon",
         pos: "e1",
@@ -362,28 +355,28 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 20,
         description: talentText`Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by ${[
-          2,
-          4,
-          6,
-          8,
           10,
-        ]}% and reduces the resist chance by ${[2, 4, 6, 8, 10]}%.`,
+          20,
+          30,
+          40,
+          50,
+        ]}% and reduces the resist chance by ${[3, 6, 9, 12, 15]}%.`,
       },
-      "Demonic Sacrifice": {
-        name: "Demonic Sacrifice",
+      "Soul Link": {
+        name: "Soul Link",
         pos: "e2",
-        icon: icons["spell_shadow_psychicscream"],
+        icon: icons["spell_shadow_gathershadows"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`When activated, sacrifices your summoned demon to grant you an effect that lasts 30 min. The effect is canceled if any Demon is summoned.\n\nImp: Increases your Fire damage by 15%.\n\nVoidwalker: Restores 3% of your total Health every 4 sec.\n\nSuccubus: Increases your Shadow damage by 15%.\n\nFelhunter: Restores 2% of total Mana every 4 sec.`,
+        description: talentText`When active, 20% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, or Felhunter demon instead. In addition, both the demon and master will inflict 1% more damage. Lasts as long as the demon is active.`,
       },
-      "Improved Firestone": {
-        name: "Improved Firestone",
+      "Improved Spellstone": {
+        name: "Improved Spellstone",
         pos: "e4",
-        icon: icons["inv_ammo_firetar"],
+        icon: icons["inv_misc_gem_sapphire_01"],
         maxRank: 2,
         reqPoints: 20,
-        description: talentText`Increases the bonus Fire damage from Firestones and the Firestone effect by ${[
+        description: talentText`Increases the amount of damage absorbed by your Spellstone by ${[
           15,
           30,
         ]}%.`,
@@ -422,26 +415,15 @@ export const data: TalentData = {
           1,
         ]} per level.`,
       },
-      "Soul Link": {
-        name: "Soul Link",
+      "Demonic Sacrifice": {
+        name: "Demonic Sacrifice",
         pos: "g2",
-        icon: icons["spell_shadow_gathershadows"],
+        icon: icons["spell_shadow_psychicscream"],
         maxRank: 1,
         reqPoints: 30,
-        prereq: "Demonic Sacrifice",
+        prereq: "Soul Link",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`When active, 30% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, or Felhunter demon instead. In addition, both the demon and master will inflict 3% more damage. Lasts as long as the demon is active.`,
-      },
-      "Improved Spellstone": {
-        name: "Improved Spellstone",
-        pos: "g3",
-        icon: icons["inv_misc_gem_sapphire_01"],
-        maxRank: 2,
-        reqPoints: 30,
-        description: talentText`Increases the amount of damage absorbed by your Spellstone by ${[
-          15,
-          30,
-        ]}%.`,
+        description: talentText`When activated, sacrifices your summoned demon to grant you an effect that lasts 30 min. The effect is canceled if any Demon is summoned.\n\nImp: Increases your Fire damage by 15%.\n\nVoidwalker: Restores 3% of your total Health every 4 sec.\n\nSuccubus: Increases your Shadow damage by 15%.\n\nFelhunter: Restores 2% of total Mana every 4 sec.`,
       },
     },
   },
@@ -499,11 +481,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 5,
         description: talentText`Gives your Destruction spells a ${[
-          2,
-          4,
-          6,
-          8,
-          10,
+          7,
+          14,
+          21,
+          28,
+          35,
         ]}% chance to daze the target for 5 sec.`,
       },
       "Improved Firebolt": {
@@ -513,8 +495,8 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 10,
         description: talentText`Reduces the casting time of your Imp's Firebolt spell by ${[
+          0.25,
           0.5,
-          1,
         ]} sec.`,
       },
       "Improved Lash of Pain": {
@@ -524,8 +506,8 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 10,
         description: talentText`Reduces the cooldown of your Succubus' Lash of Pain by ${[
-          3,
-          6,
+          4,
+          8,
         ]} sec.`,
       },
       "Devastation": {
@@ -559,7 +541,7 @@ export const data: TalentData = {
         description: talentText`Gives you a ${[
           35,
           70,
-        ]}% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell.`,
+        ]}% chance to resist interruption caused by damage while channeling Destruction Spells.`,
       },
       "Destructive Reach": {
         name: "Destructive Reach",
@@ -579,11 +561,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 15,
         description: talentText`Increases the critical strike chance of your Searing Pain spell by ${[
-          2,
-          4,
-          6,
-          8,
+          5,
           10,
+          15,
+          20,
+          25,
         ]}%.`,
       },
       "Pyroclasm": {

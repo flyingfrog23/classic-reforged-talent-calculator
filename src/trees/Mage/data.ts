@@ -54,17 +54,6 @@ export const data: TalentData = {
           100,
         ]}% chance to avoid interruption caused by damage while channeling Arcane Missiles.`,
       },
-      "Wand Specialization": {
-        name: "Wand Specialization",
-        pos: "b1",
-        icon: icons["inv_wand_01"],
-        maxRank: 2,
-        reqPoints: 5,
-        description: talentText`Increases your damage with Wands by ${[
-          13,
-          25,
-        ]}%.`,
-      },
       "Magic Absorption": {
         name: "Magic Absorption",
         pos: "b2",
@@ -122,13 +111,17 @@ export const data: TalentData = {
           6,
         ]}%.`,
       },
-      "Arcane Resilience": {
-        name: "Arcane Resilience",
+      "Arcane Meditation": {
+        name: "Arcane Meditation",
         pos: "c3",
-        icon: icons["spell_arcane_arcaneresilience"],
-        maxRank: 1,
+        icon: icons["spell_shadow_siphonmana"],
+        maxRank: 3,
         reqPoints: 10,
-        description: talentText`Increases your armor by an amount equal to 50% of your Intellect.`,
+        description: talentText`Allows ${[
+          5,
+          10,
+          15,
+        ]}% of your Mana regeneration to continue while casting.`,
       },
       "Improved Mana Shield": {
         name: "Improved Mana Shield",
@@ -137,8 +130,8 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 15,
         description: talentText`Decreases the mana lost per point of damage taken when Mana Sheild is active by ${[
-          10,
-          20,
+          40,
+          80,
         ]}%.`,
       },
       "Improved Counterspell": {
@@ -152,25 +145,21 @@ export const data: TalentData = {
           100,
         ]}% chance to silence the target for 4 sec.`,
       },
-      "Arcane Meditation": {
-        name: "Arcane Meditation",
-        pos: "d4",
-        icon: icons["spell_shadow_siphonmana"],
-        maxRank: 3,
+      "Arcane Resilience": {
+        name: "Arcane Resilience",
+        pos: "d3",
+        icon: icons["spell_arcane_arcaneresilience"],
+        maxRank: 1,
         reqPoints: 15,
-        description: talentText`Allows ${[
-          5,
-          10,
-          15,
-        ]}% of your Mana regeneration to continue while casting.`,
+        description: talentText`Increases your armor by an amount equal to 150% of your Intellect.`,
       },
-      "Presence of Mind": {
-        name: "Presence of Mind",
+      "Arcane Power": {
+        name: "Arcane Power",
         pos: "e2",
-        icon: icons["spell_nature_enchantarmor"],
+        icon: icons["spell_nature_lightning"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell.`,
+        description: talentText`When activated, your spells deal 30% more damage while costing 30% more mana to cast. This effect lasts 15 sec.`,
       },
       "Arcane Mind": {
         name: "Arcane Mind",
@@ -179,7 +168,7 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 20,
         prereq: "Arcane Resilience",
-        arrows: [{ dir: "down", from: "c3", to: "e3" }],
+        arrows: [{ dir: "down", from: "d3", to: "e3" }],
         description: talentText`Increases your maximum Mana by ${[
           2,
           4,
@@ -194,23 +183,23 @@ export const data: TalentData = {
         icon: icons["spell_shadow_teleport"],
         maxRank: 3,
         reqPoints: 25,
-        prereq: "Presence of Mind",
+        prereq: "Arcane Power",
         arrows: [{ dir: "down", from: "e2", to: "f2" }],
         description: talentText`Increases your spell damage critical strike chance by ${[
-          1,
           2,
-          3,
+          4,
+          6,
         ]}%.`,
       },
-      "Arcane Power": {
-        name: "Arcane Power",
+      "Presence of Mind": {
+        name: "Presence of Mind",
         pos: "g2",
-        icon: icons["spell_nature_lightning"],
+        icon: icons["spell_nature_enchantarmor"],
         maxRank: 1,
         reqPoints: 30,
         prereq: "Arcane Instability",
         arrows: [{ dir: "down", from: "f2", to: "g2" }],
-        description: talentText`When activated, your spells deal 30% more damage while costing 30% more mana to cast. This effect lasts 15 sec.`,
+        description: talentText`When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell.`,
       },
     },
   },
@@ -302,9 +291,9 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 10,
         description: talentText`Increases the critical strike chance of your Flamestrike spell by ${[
-          5,
-          10,
           15,
+          30,
+          45,
         ]}%.`,
       },
       "Pyroblast": {
@@ -348,8 +337,8 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 15,
         description: talentText`Causes your Fire Ward to have a ${[
-          10,
-          20,
+          50,
+          100,
         ]}% chance to reflect Fire spells when active.`,
       },
       "Master of Elements": {
@@ -520,13 +509,13 @@ export const data: TalentData = {
           6,
         ]}%.`,
       },
-      "Cold Snap": {
-        name: "Cold Snap",
+      "Ice Block": {
+        name: "Ice Block",
         pos: "c2",
-        icon: icons["spell_frost_wizardmark"],
+        icon: icons["spell_frost_frost"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`When activated, this spell finishes the cooldown on all your Frost spells.`,
+        description: talentText`You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot, move or cast spells.`,
       },
       "Improved Blizzard": {
         name: "Improved Blizzard",
@@ -571,25 +560,25 @@ export const data: TalentData = {
         name: "Shatter",
         pos: "d3",
         icon: icons["spell_frost_frostshock"],
-        maxRank: 1,
+        maxRank: 5,
         reqPoints: 15,
         prereq: "Improved Frost Nova",
         arrows: [{ dir: "down", from: "b3", to: "d3" }],
         description: talentText`Increases the critical strike chance of all your spells against frozen targets by ${[
-          10,
-          20,
+          6,
+          12,
+          18,
+          24,
           30,
-          40,
-          50,
         ]}%.`,
       },
-      "Ice Block": {
-        name: "Ice Block",
+      "Cold Snap": {
+        name: "Cold Snap",
         pos: "e2",
-        icon: icons["spell_frost_frost"],
+        icon: icons["spell_frost_wizardmark"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot, move or cast spells.`,
+        description: talentText`When activated, this spell finishes the cooldown on all your Frost spells.`,
       },
       "Improved Cone of Cold": {
         name: "Improved Cone of Cold",

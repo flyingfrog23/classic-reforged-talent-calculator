@@ -19,9 +19,9 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 0,
         description: talentText`Reduces the cost of your Heroic Strike ability by ${[
-          1,
           2,
-          3,
+          4,
+          6,
         ]} rage point${["", "s", "s"]}.`,
       },
       "Deflection": {
@@ -45,9 +45,9 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 0,
         description: talentText`Increases the bleed damage done by your Rend ability by ${[
-          15,
           25,
-          35,
+          50,
+          75,
         ]}%.`,
       },
       "Improved Charge": {
@@ -68,11 +68,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 5,
         description: talentText`You retain up to ${[
-          5,
-          10,
-          15,
-          20,
-          25,
+          8,
+          16,
+          24,
+          32,
+          40,
         ]} of your rage points when you change stances.`,
       },
       "Improved Thunder Clap": {
@@ -82,9 +82,9 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 5,
         description: talentText`Reduces the cost of your Thunder Clap ability by ${[
-          1,
-          2,
-          4,
+          5,
+          10,
+          15,
         ]} rage point${["", "s", "s"]}.`,
       },
       "Improved Overpower": {
@@ -122,6 +122,20 @@ export const data: TalentData = {
           60,
         ]}% of your melee weapon's average damage over 12 sec.`,
       },
+      "Axe Specialization": {
+        name: "Axe Specialization",
+        pos: "d1",
+        icon: icons["inv_axe_06"],
+        maxRank: 5,
+        reqPoints: 15,
+        description: talentText`Increases your chance to get a critical strike with Axes by ${[
+          1,
+          2,
+          3,
+          4,
+          5,
+        ]}%.`,
+      },
       "Two-Handed Weapon Specialization": {
         name: "Two-Handed Weapon Specialization",
         pos: "d2",
@@ -149,13 +163,13 @@ export const data: TalentData = {
           20,
         ]}%.`,
       },
-      "Axe Specialization": {
-        name: "Axe Specialization",
-        pos: "e1",
-        icon: icons["inv_axe_06"],
+      "Polearm Specialization": {
+        name: "Polearm Specialization",
+        pos: "d4",
+        icon: icons["inv_weapon_halbard_01"],
         maxRank: 5,
-        reqPoints: 20,
-        description: talentText`Increases your chance to get a critical strike with Axes by ${[
+        reqPoints: 15,
+        description: talentText`Increases your chance to get a critical strike with Polearms by ${[
           1,
           2,
           3,
@@ -187,10 +201,10 @@ export const data: TalentData = {
       },
       "Sword Specialization": {
         name: "Sword Specialization",
-        pos: "e4",
+        pos: "f1",
         icon: icons["inv_sword_27"],
         maxRank: 5,
-        reqPoints: 20,
+        reqPoints: 25,
         description: talentText`Gives you a ${[
           1,
           2,
@@ -198,20 +212,6 @@ export const data: TalentData = {
           4,
           5,
         ]}% chance to get an extra attack on the same target after dealing damage with your Sword.`,
-      },
-      "Polearm Specialization": {
-        name: "Polearm Specialization",
-        pos: "f1",
-        icon: icons["inv_weapon_halbard_01"],
-        maxRank: 5,
-        reqPoints: 25,
-        description: talentText`Increases your chance to get a critical strike with Polearms by ${[
-          1,
-          2,
-          3,
-          4,
-          5,
-        ]}%.`,
       },
       "Improved Hamstring": {
         name: "Improved Hamstring",
@@ -270,6 +270,18 @@ export const data: TalentData = {
           5,
         ]}%.`,
       },
+      "Improved Cleave": {
+        name: "Improved Cleave",
+        pos: "b1",
+        icon: icons["ability_warrior_cleave"],
+        maxRank: 3,
+        reqPoints: 5,
+        description: talentText`Increases the bonus damage done by your Cleave ability by ${[
+          40,
+          80,
+          120,
+        ]}%.`,
+      },
       "Improved Demoralizing Shout": {
         name: "Improved Demoralizing Shout",
         pos: "b2",
@@ -298,17 +310,17 @@ export const data: TalentData = {
           40,
         ]}% chance to generate an additional Rage point when you deal melee damage with a weapon.`,
       },
-      "Improved Cleave": {
-        name: "Improved Cleave",
+      "Blood Craze": {
+        name: "Blood Craze",
         pos: "c1",
-        icon: icons["ability_warrior_cleave"],
+        icon: icons["spell_shadow_summonimp"],
         maxRank: 3,
         reqPoints: 10,
-        description: talentText`Increases the bonus damage done by your Cleave ability by ${[
-          40,
-          80,
-          120,
-        ]}%.`,
+        description: talentText`Regenerates ${[
+          5,
+          10,
+          15,
+        ]}% of your total Health over 6 sec after being the victim of a critical strike.`,
       },
       "Piercing Howl": {
         name: "Piercing Howl",
@@ -318,17 +330,19 @@ export const data: TalentData = {
         reqPoints: 10,
         description: talentText`Causes all enemies near the warrior to be dazed, reducing movement speed by 50% for 6 sec.`,
       },
-      "Blood Craze": {
-        name: "Blood Craze",
+      "Dual Wield Specialization": {
+        name: "Dual Wield Specialization",
         pos: "c3",
-        icon: icons["spell_shadow_summonimp"],
-        maxRank: 3,
+        icon: icons["ability_dualwield"],
+        maxRank: 5,
         reqPoints: 10,
-        description: talentText`Regenerates ${[
-          1,
-          2,
-          3,
-        ]}% of your total Health over 6 sec after being the victim of a critical strike.`,
+        description: talentText`Increases the damage done by your offhand weapon by ${[
+          5,
+          10,
+          15,
+          20,
+          25,
+        ]}%.`,
       },
       "Improved Battle Shout": {
         name: "Improved Battle Shout",
@@ -344,20 +358,7 @@ export const data: TalentData = {
           25,
         ]}%.`,
       },
-      "Dual Wield Specialization": {
-        name: "Dual Wield Specialization",
-        pos: "d1",
-        icon: icons["ability_dualwield"],
-        maxRank: 5,
-        reqPoints: 15,
-        description: talentText`Increases the damage done by your offhand weapon by ${[
-          5,
-          10,
-          15,
-          20,
-          25,
-        ]}%.`,
-      },
+//placeholder dual wield
       "Improved Execute": {
         name: "Improved Execute",
         pos: "d2",
@@ -390,11 +391,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 20,
         description: talentText`Decreases the casting time of your Slam ability by ${[
-          0.1,
-          0.2,
           0.3,
-          0.4,
-          0.5,
+          0.6,
+          0.9,
+          1.2,
+          1.5,
         ]} sec.`,
       },
       "Death Wish": {
@@ -403,7 +404,7 @@ export const data: TalentData = {
         icon: icons["spell_shadow_deathpact"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`When activated, increases your physical damage by 20% and makes you immune to Fear effects, but lowers your armor and all resistances by 20%.`,
+        description: talentText`When activated, increases your physical damage by 10% and makes you immune to Fear effects, but lowers your armor and all resistances by 10%.`,
       },
       "Improved Intercept": {
         name: "Improved Intercept",
@@ -412,8 +413,8 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 20,
         description: talentText`Reduces the cooldown of your Intercept abiilty by ${[
-          5,
-          10,
+          8,
+          16,
         ]} sec.`,
       },
       "Improved Berserker Rage": {
@@ -441,7 +442,7 @@ export const data: TalentData = {
           20,
           25,
           30,
-        ]}% for your next 3 swings aftre dealing a melee critical strike.`,
+        ]}% for your next 3 swings after dealing a melee critical strike.`,
       },
       "Bloodthirst": {
         name: "Bloodthirst",
@@ -480,19 +481,19 @@ export const data: TalentData = {
           100,
         ]}% chance to generate 1 rage when a block occurs.`,
       },
-      "Anticipation": {
-        name: "Anticipation",
+      "Iron Will": {
+        name: "Iron Will",
         pos: "a3",
-        icon: icons["spell_nature_mirrorimage"],
+        icon: icons["spell_magic_magearmor"],
         maxRank: 5,
         reqPoints: 0,
-        description: talentText`Increases your Defense skill by ${[
-          2,
-          4,
+        description: talentText`Increases your chance to resist Stun, Polymorph, Movement Impairing and Charm effects by an additional ${[
+          3,
           6,
-          8,
-          10,
-        ]}.`,
+          9,
+          12,
+          15,
+        ]}%.`,
       },
       "Improved Bloodrage": {
         name: "Improved Bloodrage",
@@ -519,19 +520,19 @@ export const data: TalentData = {
           10,
         ]}%.`,
       },
-      "Iron Will": {
-        name: "Iron Will",
+      "Defiance": {
+        name: "Defiance",
         pos: "b4",
-        icon: icons["spell_magic_magearmor"],
+        icon: icons["ability_warrior_innerrage"],
         maxRank: 5,
         reqPoints: 5,
-        description: talentText`Increases your chance to resist Stun and Charm effects by an additional ${[
+        description: talentText`Increases the threat generated by your attacks by ${[
           3,
           6,
           9,
           12,
           15,
-        ]}%.`,
+        ]}% while in Defensive Stance.`,
       },
       "Last Stand": {
         name: "Last Stand",
@@ -569,19 +570,19 @@ export const data: TalentData = {
           45,
         ]}% chance to stun the target for 3 sec.`,
       },
-      "Defiance": {
-        name: "Defiance",
+      "Anticipation": {
+        name: "Anticipation",
         pos: "c4",
-        icon: icons["ability_warrior_innerrage"],
+        icon: icons["spell_nature_mirrorimage"],
         maxRank: 5,
         reqPoints: 10,
-        description: talentText`Increases the threat generated by your attacks by ${[
-          3,
+        description: talentText`Increases your Defense skill by ${[
+          2,
+          4,
           6,
-          9,
-          12,
-          15,
-        ]}% while in Defensive Stance.`,
+          8,
+          10,
+        ]}.`,
       },
       "Improved Sunder Armor": {
         name: "Improved Sunder Armor",
@@ -655,11 +656,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 25,
         description: talentText`Increases the damage you deal with One-Handed Melee weapons by ${[
-          2,
-          4,
-          6,
-          8,
+          5,
           10,
+          15,
+          20,
+          25,
         ]}%.`,
       },
       "Shield Slam": {
