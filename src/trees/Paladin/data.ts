@@ -52,23 +52,9 @@ export const data: TalentData = {
           12,
         ]}%.`,
       },
-      "Guardian's Favor": {
-        name: "Guardian's Favor",
-        pos: "b2",
-        icon: icons["spell_holy_sealofprotection"],
-        maxRank: 2,
-        reqPoints: 5,
-        description: talentText`Reduces the cooldown of your Blessing of Protection by ${[
-          60,
-          120,
-        ]} sec and increases the duration of your Blessing of Freedom by ${[
-          3,
-          6,
-        ]} sec.`,
-      },
       "Spiritual Focus": {
         name: "Spiritual Focus",
-        pos: "b3",
+        pos: "b2",
         icon: icons["spell_arcane_blink"],
         maxRank: 5,
         reqPoints: 5,
@@ -79,6 +65,20 @@ export const data: TalentData = {
           56,
           70,
         ]}% chance to not lose casting time when you take damage.`,
+      },
+      "Guardian's Favor": {
+        name: "Guardian's Favor",
+        pos: "b3",
+        icon: icons["spell_holy_sealofprotection"],
+        maxRank: 2,
+        reqPoints: 5,
+        description: talentText`Reduces the cooldown of your Blessing of Protection by ${[
+          60,
+          120,
+        ]} sec and increases the duration of your Blessing of Freedom by ${[
+          3,
+          6,
+        ]} sec.`,
       },
       "Improved Concentration Aura": {
         name: "Improved Concentration Aura",
