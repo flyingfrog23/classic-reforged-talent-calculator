@@ -87,7 +87,7 @@ export const data: TalentData = {
           3,
           6,
         ]} sec, mana cost is reduced by ${[
-          48,
+          40,
           80,
         ]}%, and increases the health your pet returns with by an additional ${[
           25,
