@@ -309,11 +309,22 @@ export const data: TalentData = {
       },
       "Holy Reach": {
         name: "Holy Reach",
-        pos: "d2",
+        pos: "d1",
         icon: icons["spell_holy_purify"],
         maxRank: 2,
         reqPoints: 15,
         description: talentText`Increases the range of your Smite and Holy Fire spells and the radius of your Prayer of Healing and Holy Nova spells by ${[
+          10,
+          20,
+        ]}%.`,
+      },
+      "Improved Prayer of Healing": {
+        name: "Improved Prayer of Healing",
+        pos: "d1",
+        icon: icons["spell_holy_prayerofhealing02"],
+        maxRank: 2,
+        reqPoints: 20,
+        description: talentText`Reduces the Mana cost of your Prayer of Healing spell by ${[
           10,
           20,
         ]}%.`,
@@ -331,17 +342,6 @@ export const data: TalentData = {
           60,
           75,
         ]}% of your total Spirit.`,
-      },
-      "Improved Prayer of Healing": {
-        name: "Improved Prayer of Healing",
-        pos: "e1",
-        icon: icons["spell_holy_prayerofhealing02"],
-        maxRank: 2,
-        reqPoints: 20,
-        description: talentText`Reduces the Mana cost of your Prayer of Healing spell by ${[
-          10,
-          20,
-        ]}%.`,
       },
       "Burst of Faith": {
         name: "Burst of Faith",
