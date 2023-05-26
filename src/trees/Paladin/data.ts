@@ -342,7 +342,7 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 15,
         description: talentText`Increases the damage done by your Retribution Aura by ${[
-          78,
+          70,
           150,
         ]}%.`,
       },
