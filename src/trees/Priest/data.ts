@@ -42,7 +42,7 @@ export const data: TalentData = {
       },
       "Martyrdom": {
         name: "Martyrdom",
-        pos: "12",
+        pos: "b1",
         icon: icons["spell_nature_tranquility"],
         maxRank: 2,
         reqPoints: 5,
