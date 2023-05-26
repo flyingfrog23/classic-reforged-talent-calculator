@@ -130,8 +130,8 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 15,
         description: talentText`Decreases the mana lost per point of damage taken when Mana Sheild is active by ${[
-          40,
-          80,
+          30,
+          60,
         ]}%.`,
       },
       "Improved Counterspell": {
