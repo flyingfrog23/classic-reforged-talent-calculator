@@ -403,7 +403,7 @@ export const data: TalentData = {
 //placeholder fist weapon special
       "Sword Specialization": {
         name: "Sword Specialization",
-        pos: "f3",
+        pos: "f1",
         icon: icons["inv_sword_27"],
         maxRank: 5,
         reqPoints: 20,
