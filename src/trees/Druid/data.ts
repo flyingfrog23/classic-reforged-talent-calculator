@@ -75,21 +75,9 @@ export const data: TalentData = {
           25,
         ]}%.`,
       },
-      "Natural Shapeshifter": {
-        name: "Natural Shapeshifter",
-        pos: "b3",
-        icon: icons["spell_nature_wispsplode"],
-        maxRank: 3,
-        reqPoints: 5,
-        description: talentText`Reduces the mana cost of all shapeshifting by ${[
-          10,
-          20,
-          30,
-        ]}%.`,
-      },
       "Subtlety": {
         name: "Subtlety",
-        pos: "b4",
+        pos: "b3",
         icon: icons["ability_eyeoftheowl"],
         maxRank: 5,
         reqPoints: 5,
@@ -99,6 +87,18 @@ export const data: TalentData = {
           15,
           20,
           25,
+        ]}%.`,
+      },
+      "Natural Shapeshifter": {
+        name: "Natural Shapeshifter",
+        pos: "b4",
+        icon: icons["spell_nature_wispsplode"],
+        maxRank: 3,
+        reqPoints: 5,
+        description: talentText`Reduces the mana cost of all shapeshifting by ${[
+          10,
+          20,
+          30,
         ]}%.`,
       },
       "Improved Thorns": {
