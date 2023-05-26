@@ -532,9 +532,9 @@ export const data: TalentData = {
           4,
           6,
         ]}% and increases the chance movement impairing effects will be resisted by an additional ${[
+          5,
           10,
-          20,
-          30,
+          15,
         ]}%`,
       },
       "Killer Instinct": {
