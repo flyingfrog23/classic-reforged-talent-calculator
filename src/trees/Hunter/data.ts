@@ -508,7 +508,7 @@ export const data: TalentData = {
         icon: icons["ability_whirlwind"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`When activated, increases your Dodge and Parry chance by 50% for 10 sec.`,
+        description: talentText`When activated, increases your Dodge and Parry chance by 25% for 10 sec.`,
       },
       "Trap Mastery": {
         name: "Trap Mastery",
