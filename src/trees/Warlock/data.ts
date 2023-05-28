@@ -120,7 +120,7 @@ export const data: TalentData = {
         icon: icons["spell_shadow_contagion"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Increases the effect of your next Curse of Weakness or Curse of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec.`,
+        description: talentText`Increases the effect of your next Curse of Weakness or Curse of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec. (3 min cooldown)`,
       },
       "Grim Reach": {
         name: "Grim Reach",
@@ -305,7 +305,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_removecurse"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Your next Imp, Voidwalker, Succubus, or Felhunter Summon spell has its casting time reduced by 5.5 sec and its mana cost reduced by 50%.`,
+        description: talentText`Your next Imp, Voidwalker, Succubus, or Felhunter Summon spell has its casting time reduced by 5.5 sec and its mana cost reduced by 50%. (15 min cooldown)`,
       },
       "Fel Stamina": {
         name: "Fel Stamina",
@@ -541,7 +541,7 @@ export const data: TalentData = {
         icon: icons["spell_shadow_scourgebuild"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Instantly blasts the target for 91 to 104 Shadow damage. If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.`,
+        description: talentText`Instantly blasts the target for 91 to 104 Shadow damage. If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard. (15 sec cooldown)`,
       },
       "Intensity": {
         name: "Intensity",
@@ -638,7 +638,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Improved Immolate",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Ignites a target that is already afflicted by Immolate, dealing 249 to 316 Fire damage and consuming the Immolate spell.`,
+        description: talentText`Ignites a target that is already afflicted by Immolate, dealing 249 to 316 Fire damage and consuming the Immolate spell. (10 sec cooldown)`,
       },
     },
   },
