@@ -13,6 +13,7 @@ const Rogue = lazy(() => import("./trees/Rogue"));
 const Shaman = lazy(() => import("./trees/Shaman"));
 const Warlock = lazy(() => import("./trees/Warlock"));
 const Warrior = lazy(() => import("./trees/Warrior"));
+//const Changelog = lazy(() => import("./trees/Changelog"));
 
 export const App: React.FC = () => {
   return (
