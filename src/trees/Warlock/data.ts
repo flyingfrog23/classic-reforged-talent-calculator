@@ -141,9 +141,9 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 15,
         description: talentText`Causes ${[
-          40,
-          80,
-        ]}% of the Mana drained by your Drain Mana spell to damage the opponent..`,
+          15,
+          30,
+        ]}% of the Mana drained by your Drain Mana spell to damage the opponent.`,
       },
       "Siphon Life": {
         name: "Siphon Life",
@@ -253,8 +253,8 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 5,
         description: talentText`Increases the amount of Health transfered by your Health Funnel spell by ${[
-          50,
-          100,
+          40,
+          80,
         ]}%.`,
       },
       "Improved Voidwalker": {

@@ -18,7 +18,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_wispsplode"],
         maxRank: 5,
         reqPoints: 0,
-        description: talentText`Reduces the many cost of your Shock, Lightening Bolt, and Chain Lightening spells by ${[
+        description: talentText`Reduces the many cost of your Shock, Lightning Bolt, and Chain Lightning spells by ${[
           10,
           20,
           30,
@@ -58,9 +58,9 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 5,
         description: talentText`Reduces the damage taken by Fire, Frost and Nature effects by ${[
-          6,
-          12,
-          18,
+          5,
+          10,
+          15,
         ]}%.`,
       },
       "Call of Flame": {
@@ -278,9 +278,9 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 5,
         description: talentText`Increases the damage done by your Lightning Shield orbs by ${[
-          75,
+          50,
+          100,
           150,
-          225,
         ]}%.`,
       },
       "Enhancing Totems": {
@@ -521,8 +521,8 @@ export const data: TalentData = {
         reqPoints: 10,
         description: talentText`The radius of your totems that affect friendly targets is increased to 30 yd.`,
       },
-      "Healing Grace": {
-        name: "Healing Grace",
+      "Grace": {
+        name: "Grace",
         pos: "c4",
         icon: icons["spell_nature_healingtouch"],
         maxRank: 3,
