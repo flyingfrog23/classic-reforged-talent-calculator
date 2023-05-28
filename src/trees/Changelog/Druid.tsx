@@ -7,10 +7,10 @@ import { createTalentProvider } from "../../TalentContext";
 
 const TalentProvider = createTalentProvider(data);
 
-export const Druid: React.FC = () => {
+export const Druid: Changelog.FC = () => {
   return (
     <TalentProvider>
-      <KlassTrees klass="Druid" />
+      <KlassTrees klass="Changelog" />
     </TalentProvider>
   );
 };
