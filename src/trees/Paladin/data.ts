@@ -154,7 +154,7 @@ export const data: TalentData = {
         reqPoints: 20,
         prereq: "Illumination",
         arrows: [{ dir: "down", from: "d2", to: "e2" }],
-        description: talentText`When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance.`,
+        description: talentText`When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance. (2 min cooldown)`,
       },
       "Lasting Judgement": {
         name: "Lasting Judgement",
@@ -190,7 +190,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Divine Favor",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Blasts the target with Holy energy, causing 204 to 220 Holy damage to an enemy, or 204 to 220 healing to an ally.`,
+        description: talentText`Blasts the target with Holy energy, causing 204 to 220 Holy damage to an enemy, or 204 to 220 healing to an ally. (30 sec cooldown)`,
       },
     },
   },
@@ -281,7 +281,7 @@ export const data: TalentData = {
         icon: icons["spell_holy_innerfire"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Consecrates the land beneath the Paladin, doing 64 Holy damage over 8 sec to enemies who enter the area.`,
+        description: talentText`Consecrates the land beneath the Paladin, doing 64 Holy damage over 8 sec to enemies who enter the area. (8 sec cooldown)`,
       },
       "Improved Righteous Fury": {
         name: "Improved Righteous Fury",
@@ -390,7 +390,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Blessing of Sanctuary",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.`,
+        description: talentText`Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges. (10 sec cooldown)`,
       },
     },
   },
@@ -541,13 +541,13 @@ export const data: TalentData = {
           6,
         ]}%.`,
       },
-      "Repentence": {
-        name: "Repentence",
+      "Repentance": {
+        name: "Repentance",
         pos: "e3",
         icon: icons["spell_holy_prayerofhealing"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids.`,
+        description: talentText`Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids. (45 sec cooldown)`,
       },
       "Vengence": {
         name: "Vengence",

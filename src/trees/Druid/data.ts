@@ -323,7 +323,7 @@ export const data: TalentData = {
         icon: icons["ability_hunter_pet_bear"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.`,
+        description: talentText`Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec. (15 sec cooldown)`,
       },
       "Sharpened Claws": {
         name: "Sharpened Claws",
@@ -575,7 +575,7 @@ export const data: TalentData = {
         reqPoints: 20,
         prereq: "Improved Healing Touch",
         arrows: [{ dir: "down", from: "b1", to: "e1" }],
-        description: talentText`When activated, your next Nature spell becomes an instant cast spell.`,
+        description: talentText`When activated, your next Nature spell becomes an instant cast spell. (3 min cooldown)`,
       },
       "Gift of Nature": {
         name: "Gift of Nature",

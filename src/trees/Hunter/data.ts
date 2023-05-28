@@ -169,7 +169,7 @@ export const data: TalentData = {
         icon: icons["ability_devour"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`Command your pet to intimidate the target on the next successful melee attack, causing a high amount of threat and stunning the target for 3 sec.`,
+        description: talentText`Command your pet to intimidate the target on the next successful melee attack, causing a high amount of threat and stunning the target for 3 sec. (1 min cooldown)`,
       },
       "Frenzy": {
         name: "Frenzy",
@@ -195,7 +195,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Intimidation",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Send your pet into a rage causing 50% additional damage for 18 sec. While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed.`,
+        description: talentText`Send your pet into a rage causing 50% additional damage for 18 sec. While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed. (3 min cooldown)`,
       },
     },
   },
@@ -266,7 +266,7 @@ export const data: TalentData = {
         icon: icons["inv_spear_07"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`An aimed shot that increases ranged damage by 70`,
+        description: talentText`An aimed shot that increases ranged damage by 70 (6 sec cooldown)`,
       },
       "Improved Arcane Shot": {
         name: "Improved Arcane Shot",
@@ -330,7 +330,7 @@ export const data: TalentData = {
         icon: icons["ability_golemstormbolt"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`A short range shot that deals 50% wepon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used.`,
+        description: talentText`A short range shot that deals 50% wepon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used. (30 sec cooldown)`,
       },
       "Barrage": {
         name: "Barrage",
@@ -508,7 +508,7 @@ export const data: TalentData = {
         icon: icons["ability_whirlwind"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`When activated, increases your Dodge and Parry chance by 25% for 10 sec.`,
+        description: talentText`When activated, increases your Dodge and Parry chance by 25% for 10 sec. (5 min cooldown)`,
       },
       "Trap Mastery": {
         name: "Trap Mastery",
@@ -557,7 +557,7 @@ export const data: TalentData = {
         reqPoints: 20,
         prereq: "Deterrence",
         arrows: [{ dir: "down", from: "c3", to: "e3" }],
-        description: talentText`A strike that becomes active after parrying an opponent's attack. This attack deals 40 damage and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.`,
+        description: talentText`A strike that becomes active after parrying an opponent's attack. This attack deals 40 damage and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried. (5 sec cooldown)`,
       },
       "Lightening Reflexes": {
         name: "Lightening Reflexes",
@@ -581,7 +581,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Killer Instinct",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`A stinging shot that puts the target to sleep for 12 sec. Any damage will cancel the effect. When the target wakes up, the Sting causes 0 Nature damage over 12 sec. Only one Sting per Hunter can be active on the target at a time.`,
+        description: talentText`A stinging shot that puts the target to sleep for 12 sec. Any damage will cancel the effect. When the target wakes up, the Sting causes 0 Nature damage over 12 sec. Only one Sting per Hunter can be active on the target at a time. (2 min cooldown)`,
       },
     },
   },

@@ -185,7 +185,7 @@ export const data: TalentData = {
         pos: "e3",
         icon: icons["ability_rogue_kidneyshot"],
         maxRank: 3,
-        reqPoints: 20,
+        reqPoints: 15,
         description: talentText`While affected by your Kidney Shot ability, the target receives an additional ${[
           5,
           10,
