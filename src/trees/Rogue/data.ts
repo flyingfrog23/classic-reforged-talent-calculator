@@ -12,23 +12,9 @@ export const data: TalentData = {
     background: backgrounds["assassination"],
     icon: icons["ability_rogue_eviscerate"],
     talents: {
-      "Sleight of Hand": {
-        name: "Sleight of Hand",
-        pos: "a1",
-        icon: icons["ability_rogue_feint"],
-        maxRank: 2,
-        reqPoints: 0,
-        description: talentText`Reduces the chance you are critically hit by melee and ranged attacks by ${[
-          1,
-          2,
-        ]}% and increases the threat reduction of your Feint ability by ${[
-          10,
-          20,
-        ]}%.`,
-      },
       "Murder": {
         name: "Murder",
-        pos: "a2",
+        pos: "a1",
         icon: icons["spell_shadow_deathscream"],
         maxRank: 2,
         reqPoints: 0,
@@ -36,6 +22,17 @@ export const data: TalentData = {
           1,
           2,
         ]}%.`,
+      },
+      "Remorseless Attacks": {
+        name: "Remorseless Attacks",
+        pos: "a2",
+        icon: icons["ability_fiegndead"],
+        maxRank: 2,
+        reqPoints: 0,
+        description: talentText`After killing a target that yields experience or honor, gives you a ${[
+          20,
+          40,
+        ]}% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, or Ghostly Strike. Lasts 20 sec.`,
       },
       "Opportunity": {
         name: "Opportunity",
@@ -165,7 +162,7 @@ export const data: TalentData = {
         pos: "e1",
         icon: icons["ability_rogue_eviscerate"],
         maxRank: 3,
-        reqPoints: 15,
+        reqPoints: 20,
         description: talentText`Increases the damage done by your Eviscerate ability by ${[
           5,
           10,
@@ -177,15 +174,15 @@ export const data: TalentData = {
         pos: "e2",
         icon: icons["spell_shadow_possession"],
         maxRank: 1,
-        reqPoints: 15,
-        description: talentText`When used, adds 2 combo points to your target. You must add to or use those combo points within 10 sec or the combo points are lost.`,
+        reqPoints: 20,
+        description: talentText`When used, adds 2 combo points to your target. You must add to or use those combo points within 10 sec or the combo points are lost. (2 min cooldown)`,
       },
       "Improved Kidney Shot": {
         name: "Improved Kidney Shot",
         pos: "e3",
         icon: icons["ability_rogue_kidneyshot"],
         maxRank: 3,
-        reqPoints: 15,
+        reqPoints: 20,
         description: talentText`While affected by your Kidney Shot ability, the target receives an additional ${[
           5,
           10,
@@ -214,7 +211,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Seal Fate",
         arrows: [{ dir: "down", from: "f2", to: "g2" }],
-        description: talentText`When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, or Eviscerate by 100%.`,
+        description: talentText`When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, or Eviscerate by 100%. (2 min cooldown)`,
       },
     },
   },
@@ -306,7 +303,9 @@ export const data: TalentData = {
         icon: icons["ability_warrior_challange"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`A strike that becomes active after parrying an opponent's attack. This attack deals 150% weapon damage and disarms the target for 6 sec.`,
+        prereq: "Deflection",
+        arrows: [{ dir: "down", from: "b2", to: "c2" }],
+        description: talentText`A strike that becomes active after parrying an opponent's attack. This attack deals 150% weapon damage and disarms the target for 6 sec. (6 sec cooldown)`,
       },
       "Dual Wield Specialization": {
         name: "Dual Wield Specialization",
@@ -398,7 +397,7 @@ export const data: TalentData = {
         icon: icons["ability_warrior_punishingblow"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`Increases your attack speed by 20%. In addition, attacks strike an additional nearby opponent. Lasts 15 sec.`,
+        description: talentText`Increases your attack speed by 20%. In addition, attacks strike an additional nearby opponent. Lasts 15 sec. (2 min cooldown)`,
       },
 //placeholder fist weapon special
       "Sword Specialization": {
@@ -406,7 +405,7 @@ export const data: TalentData = {
         pos: "f1",
         icon: icons["inv_sword_27"],
         maxRank: 5,
-        reqPoints: 20,
+        reqPoints: 25,
         description: talentText`Gives you a ${[
           1,
           2,
@@ -424,7 +423,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Blade Flurry",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Increases your Energy regeneration rate by 100% for 15 sec. In addition you become immune to fear and incapacitate effects.`,
+        description: talentText`Increases your Energy regeneration rate by 100% for 15 sec. In addition you become immune to stun and incapacitate effects. (5 min cooldown)`,
       },
     },
   },
@@ -433,20 +432,22 @@ export const data: TalentData = {
     background: backgrounds["subtlety"],
     icon: icons["ability_stealth"],
     talents: {
-      "Improved Gouge": {
-        name: "Improved Gouge",
+      "Sleight of Hand": {
+        name: "Sleight of Hand",
         pos: "a1",
-        icon: icons["ability_gouge"],
-        maxRank: 3,
+        icon: icons["ability_rogue_feint"],
+        maxRank: 2,
         reqPoints: 0,
-        description: talentText`Increases the effect duration of your Gouge ability by ${[
-          0.5,
+        description: talentText`Reduces the chance you are critically hit by melee and ranged attacks by ${[
           1,
-          1.5,
-        ]} sec.`,
+          2,
+        ]}% and increases the threat reduction of your Feint ability by ${[
+          10,
+          20,
+        ]}%.`,
       },
-      "Lightening Reflexes": {
-        name: "Lightening Reflexes",
+      "Lightning Reflexes": {
+        name: "Lightning Reflexes",
         pos: "a2",
         icon: icons["spell_nature_invisibilty"],
         maxRank: 5,
@@ -473,16 +474,17 @@ export const data: TalentData = {
           " More effective than Master of Deception (Rank 4)",
         ]}.`,
       },
-      "Remorseless Attacks": {
-        name: "Remorseless Attacks",
+      "Improved Gouge": {
+        name: "Improved Gouge",
         pos: "a4",
-        icon: icons["ability_rogue_feigndeath"],
-        maxRank: 2,
+        icon: icons["ability_gouge"],
+        maxRank: 3,
         reqPoints: 0,
-        description: talentText`After killing a target that yields experience or honor, gives you a ${[
-          20,
-          40,
-        ]}% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, or Ghostly Strike. Lasts 20 sec.`,
+        description: talentText`Increases the effect duration of your Gouge ability by ${[
+          0.5,
+          1,
+          1.5,
+        ]} sec.`,
       },
       "Ruthlessness": {
         name: "Ruthlessness",
@@ -545,9 +547,9 @@ export const data: TalentData = {
         icon: icons["spell_shadow_curse"],
         maxRank: 1,
         reqPoints: 10,
-        prereq: "Lightening Reflexes",
+        prereq: "Lightning Reflexes",
         arrows: [{ dir: "down", from: "a2", to: "c2" }],
-        description: talentText`A strike that deals 125% weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point.`,
+        description: talentText`A strike that deals 125% weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point. (20 sec cooldown)`,
       },
       "Improved Expose Armor": {
         name: "Improved Expose Armor",
@@ -647,7 +649,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Hemorrhage",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`When activated, this ability immediately finishes the cooldown on your other Rogue abilities.`,
+        description: talentText`When activated, this ability immediately finishes the cooldown on your other Rogue abilities. (7.5 min cooldown)`,
       },
     },
   },

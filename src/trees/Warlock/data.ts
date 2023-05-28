@@ -40,10 +40,21 @@ export const data: TalentData = {
           2,
         ]} sec.`,
       },
-//placeholder improved curse of weakness
+      "Improved Curse of Weakness": {
+        name: "Improved Curse of Weakness",
+        pos: "b1",
+        icon: icons["spell_shadow_curseofmannoroth"],
+        maxRank: 3,
+        reqPoints: 5,
+        description: talentText`Increases the effect of your Curse of Weakness by ${[
+          6,
+          13,
+          20,
+        ]}%.`,
+      },
       "Improved Drain Soul": {
         name: "Improved Drain Soul",
-        pos: "b1",
+        pos: "b2",
         icon: icons["spell_shadow_haunting"],
         maxRank: 2,
         reqPoints: 5,
@@ -54,7 +65,7 @@ export const data: TalentData = {
       },
       "Improved Life Tap": {
         name: "Improved Life Tap",
-        pos: "b2",
+        pos: "b3",
         icon: icons["spell_shadow_burningspirit"],
         maxRank: 2,
         reqPoints: 5,
@@ -65,7 +76,7 @@ export const data: TalentData = {
       },
       "Improved Drain Life": {
         name: "Improved Drain Life",
-        pos: "b3",
+        pos: "b4",
         icon: icons["spell_shadow_lifedrain02"],
         maxRank: 5,
         reqPoints: 5,
