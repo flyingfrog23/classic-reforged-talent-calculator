@@ -117,18 +117,6 @@ export const data: TalentData = {
           75,
         ]}% chance to resist dispel effects.`,
       },
-      "Serrated Blades": {
-        name: "Serrated Blades",
-        pos: "d1",
-        icon: icons["inv_sword_17"],
-        maxRank: 3,
-        reqPoints: 15,
-        description: talentText`Causes your attacks to ignore 0 of your target's Armor and increases the damage dealt by your Rupture ability by ${[
-          10,
-          20,
-          30,
-        ]}%. The amount of Armor reduced increases with your level.`,
-      },
       "Dagger Specialization": {
         name: "Dagger Specialization",
         pos: "d2",
@@ -143,19 +131,17 @@ export const data: TalentData = {
           5,
         ]}%.`,
       },
-      "Fist Weapon Specialization": {
-        name: "Fist Weapon Specialization",
+      "Serrated Blades": {
+        name: "Serrated Blades",
         pos: "d3",
-        icon: icons["inv_gauntlets_04"],
-        maxRank: 5,
+        icon: icons["inv_sword_17"],
+        maxRank: 3,
         reqPoints: 15,
-        description: talentText`Increases your chance to get a critical strike with Fist Weapons by ${[
-          1,
-          2,
-          3,
-          4,
-          5,
-        ]}%.`,
+        description: talentText`Causes your attacks to ignore 0 of your target's Armor and increases the damage dealt by your Rupture ability by ${[
+          10,
+          20,
+          30,
+        ]}%. The amount of Armor reduced increases with your level.`,
       },
       "Improved Eviscerate": {
         name: "Improved Eviscerate",
@@ -336,7 +322,7 @@ export const data: TalentData = {
       },
       "Aggression": {
         name: "Aggression",
-        pos: "d2",
+        pos: "d1",
         icon: icons["ability_racial_avatar"],
         maxRank: 3,
         reqPoints: 15,
@@ -344,6 +330,20 @@ export const data: TalentData = {
           2,
           4,
           6,
+        ]}%.`,
+      },
+      "Fist Weapon Specialization": {
+        name: "Fist Weapon Specialization",
+        pos: "d2",
+        icon: icons["inv_gauntlets_04"],
+        maxRank: 5,
+        reqPoints: 15,
+        description: talentText`Increases your chance to get a critical strike with Fist Weapons by ${[
+          1,
+          2,
+          3,
+          4,
+          5,
         ]}%.`,
       },
       "Lethality": {
