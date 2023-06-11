@@ -428,7 +428,7 @@ export const data: TalentData = {
           21,
           28,
           35,
-        ]}% and while in Cat Form your Strength is increased by ${[
+        ]}% and while in Cat Form your Agility is increased by ${[
           7,
           14,
           21,
