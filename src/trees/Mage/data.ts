@@ -155,7 +155,7 @@ export const data: TalentData = {
       },
       "Presence of Mind": {
         name: "Presence of Mind",
-        pos: "g2",
+        pos: "e2",
         icon: icons["spell_nature_enchantarmor"],
         maxRank: 1,
         reqPoints: 20,
@@ -193,7 +193,7 @@ export const data: TalentData = {
       },
       "Arcane Power": {
         name: "Arcane Power",
-        pos: "e2",
+        pos: "g2",
         icon: icons["spell_nature_lightning"],
         maxRank: 1,
         reqPoints: 30,
