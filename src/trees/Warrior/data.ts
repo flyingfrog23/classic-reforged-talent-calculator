@@ -204,7 +204,6 @@ export const data: TalentData = {
             4,
             5,
           ]}% chance to stun your target for 3 sec with a Mace.`,
-        },
       },
       "Sword Specialization": {
         name: "Sword Specialization",
