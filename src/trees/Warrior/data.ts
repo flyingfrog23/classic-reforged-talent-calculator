@@ -191,13 +191,20 @@ export const data: TalentData = {
         icon: icons["inv_mace_01"],
         maxRank: 5,
         reqPoints: 20,
-        description: talentText`Gives you a ${[
-          1,
-          2,
-          3,
-          4,
-          5,
-        ]}% chance to stun your target for 3 sec with a Mace.`,
+        description: talentText`Increases your skill with Maces by ${[
+            1,
+            2,
+            3,
+            4,
+            5,
+          ]}, and gives you a ${[
+            1,
+            2,
+            3,
+            4,
+            5,
+          ]}% chance to stun your target for 3 sec with a Mace.`,
+        },
       },
       "Sword Specialization": {
         name: "Sword Specialization",
