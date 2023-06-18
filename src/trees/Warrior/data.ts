@@ -68,11 +68,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 5,
         description: talentText`You retain up to ${[
-          8,
-          16,
-          24,
-          32,
-          40,
+          5,
+          10,
+          15,
+          20,
+          25,
         ]} of your rage points when you change stances.`,
       },
       "Improved Thunder Clap": {
