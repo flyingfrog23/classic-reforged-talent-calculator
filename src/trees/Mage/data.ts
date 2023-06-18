@@ -565,11 +565,11 @@ export const data: TalentData = {
         prereq: "Improved Frost Nova",
         arrows: [{ dir: "down", from: "b3", to: "d3" }],
         description: talentText`Increases the critical strike chance of all your spells against frozen targets by ${[
-          6,
-          12,
-          18,
-          24,
+          10,
+          20,
           30,
+          40,
+          50,
         ]}%.`,
       },
       "Cold Snap": {
