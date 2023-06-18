@@ -493,7 +493,7 @@ export const data: TalentData = {
         icon: icons["spell_magic_magearmor"],
         maxRank: 5,
         reqPoints: 0,
-        description: talentText`Increases your chance to resist Stun, Polymorph, Movement Impairing and Charm effects by an additional ${[
+        description: talentText`Increases your chance to resist Stun and Charm effects by an additional ${[
           3,
           6,
           9,
