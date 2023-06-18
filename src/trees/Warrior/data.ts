@@ -397,11 +397,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 20,
         description: talentText`Decreases the casting time of your Slam ability by ${[
+          0.1,
+          0.2,
           0.3,
-          0.6,
-          0.9,
-          1.2,
-          1.5,
+          0.4,
+          0.5,
         ]} sec.`,
       },
       "Death Wish": {
