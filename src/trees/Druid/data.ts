@@ -417,11 +417,11 @@ export const data: TalentData = {
         prereq: "Predatory Strikes",
         arrows: [{ dir: "down", from: "d2", to: "f2" }],
         description: talentText`Increases your Intellect by ${[
-          4,
-          8,
-          12,
-          16,
-          20,
+          7,
+          14,
+          21,
+          28,
+          35,
         ]}%. In addition, while in Bear or Dire Bear Form your Stamina is increased by ${[
           7,
           14,
