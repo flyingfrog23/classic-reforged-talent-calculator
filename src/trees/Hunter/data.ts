@@ -170,8 +170,8 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 20,
         description: talentText`While your pet is active, you and your pet will regenerate ${[
-          3.5,
-          7,
+          3,
+          6,
         ]}% of total health every 10 sec.`,
       },
       "Intimidation": {
