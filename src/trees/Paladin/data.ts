@@ -213,8 +213,8 @@ export const data: TalentData = {
           50,
         ]}%.`,
       },
-      "Shield Specialization": {
-        name: "Shield Specialization",
+      "Redoubt": {
+        name: "Redoubt",
         pos: "a3",
         icon: icons["ability_defend"],
         maxRank: 5,
