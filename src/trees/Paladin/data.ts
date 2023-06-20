@@ -213,8 +213,8 @@ export const data: TalentData = {
           50,
         ]}%.`,
       },
-      "Redoubt": {
-        name: "Redoubt",
+      "Shield Specialization": {
+        name: "Shield Specializationt",
         pos: "a3",
         icon: icons["ability_defend"],
         maxRank: 5,
@@ -295,8 +295,8 @@ export const data: TalentData = {
           50,
         ]}%.`,
       },
-      "Shield Specialization": {
-        name: "Shield Specialization",
+      "Redoubt": {
+        name: "Redoubt",
         pos: "c3",
         icon: icons["inv_shield_06"],
         maxRank: 3,
