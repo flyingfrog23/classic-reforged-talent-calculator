@@ -442,7 +442,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_unyeildingstamina"],
         maxRank: 1,
         reqPoints: 30,
-        description: talentText`While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases the chance to doge meele attacks, the chance to hit with melee attacks and melee critical chance of all party members within 45 yards by 3%`,
+        description: talentText`While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases the chance to dodge meele attacks, the chance to hit with melee attacks and melee critical chance of all party members within 45 yards by 3%`,
       },
     },
   },
