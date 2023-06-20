@@ -213,8 +213,8 @@ export const data: TalentData = {
           50,
         ]}%.`,
       },
-      "Redoubt": {
-        name: "Redoubt",
+      "Shield Specialization": {
+        name: "Shield Specialization",
         pos: "a3",
         icon: icons["ability_defend"],
         maxRank: 5,
@@ -342,7 +342,7 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 15,
         description: talentText`Increases the damage done by your Retribution Aura by ${[
-          70,
+          75,
           150,
         ]}%.`,
       },
