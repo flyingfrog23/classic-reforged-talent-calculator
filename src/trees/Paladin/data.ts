@@ -254,11 +254,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 5,
         description: talentText`Increases the damage done by your Seal of Righteousness by ${[
-          4,
-          8,
-          12,
-          16,
+          5,
+          10,
+          15,
           20,
+          25,
         ]}%.`,
       },
       "Toughness": {
