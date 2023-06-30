@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/classic-reforged-talent-calculator/static/css/main.0ae4d62a.css",
-    "main.js": "/classic-reforged-talent-calculator/static/js/main.7be83afc.js",
+    "main.js": "/classic-reforged-talent-calculator/static/js/main.6ee9691c.js",
     "static/css/859.db995429.chunk.css": "/classic-reforged-talent-calculator/static/css/859.db995429.chunk.css",
-    "static/js/859.fa14f36c.chunk.js": "/classic-reforged-talent-calculator/static/js/859.fa14f36c.chunk.js",
+    "static/js/859.cf17ae25.chunk.js": "/classic-reforged-talent-calculator/static/js/859.cf17ae25.chunk.js",
     "static/css/79.db995429.chunk.css": "/classic-reforged-talent-calculator/static/css/79.db995429.chunk.css",
     "static/js/79.e2b491e3.chunk.js": "/classic-reforged-talent-calculator/static/js/79.e2b491e3.chunk.js",
     "static/css/214.db995429.chunk.css": "/classic-reforged-talent-calculator/static/css/214.db995429.chunk.css",
@@ -11,7 +11,7 @@
     "static/css/690.db995429.chunk.css": "/classic-reforged-talent-calculator/static/css/690.db995429.chunk.css",
     "static/js/690.89930d64.chunk.js": "/classic-reforged-talent-calculator/static/js/690.89930d64.chunk.js",
     "static/css/729.db995429.chunk.css": "/classic-reforged-talent-calculator/static/css/729.db995429.chunk.css",
-    "static/js/729.db5b6fed.chunk.js": "/classic-reforged-talent-calculator/static/js/729.db5b6fed.chunk.js",
+    "static/js/729.4a1f4e8f.chunk.js": "/classic-reforged-talent-calculator/static/js/729.4a1f4e8f.chunk.js",
     "static/css/196.db995429.chunk.css": "/classic-reforged-talent-calculator/static/css/196.db995429.chunk.css",
     "static/js/196.e7e420d7.chunk.js": "/classic-reforged-talent-calculator/static/js/196.e7e420d7.chunk.js",
     "static/css/577.db995429.chunk.css": "/classic-reforged-talent-calculator/static/css/577.db995429.chunk.css",
@@ -50,9 +50,9 @@
     "static/media/survival_instincts.jpg": "/classic-reforged-talent-calculator/static/media/survival_instincts.29e44a68c42c648cbe1e.jpg",
     "index.html": "/classic-reforged-talent-calculator/index.html",
     "main.0ae4d62a.css.map": "/classic-reforged-talent-calculator/static/css/main.0ae4d62a.css.map",
-    "main.7be83afc.js.map": "/classic-reforged-talent-calculator/static/js/main.7be83afc.js.map",
+    "main.6ee9691c.js.map": "/classic-reforged-talent-calculator/static/js/main.6ee9691c.js.map",
     "859.db995429.chunk.css.map": "/classic-reforged-talent-calculator/static/css/859.db995429.chunk.css.map",
-    "859.fa14f36c.chunk.js.map": "/classic-reforged-talent-calculator/static/js/859.fa14f36c.chunk.js.map",
+    "859.cf17ae25.chunk.js.map": "/classic-reforged-talent-calculator/static/js/859.cf17ae25.chunk.js.map",
     "79.db995429.chunk.css.map": "/classic-reforged-talent-calculator/static/css/79.db995429.chunk.css.map",
     "79.e2b491e3.chunk.js.map": "/classic-reforged-talent-calculator/static/js/79.e2b491e3.chunk.js.map",
     "214.db995429.chunk.css.map": "/classic-reforged-talent-calculator/static/css/214.db995429.chunk.css.map",
@@ -60,7 +60,7 @@
     "690.db995429.chunk.css.map": "/classic-reforged-talent-calculator/static/css/690.db995429.chunk.css.map",
     "690.89930d64.chunk.js.map": "/classic-reforged-talent-calculator/static/js/690.89930d64.chunk.js.map",
     "729.db995429.chunk.css.map": "/classic-reforged-talent-calculator/static/css/729.db995429.chunk.css.map",
-    "729.db5b6fed.chunk.js.map": "/classic-reforged-talent-calculator/static/js/729.db5b6fed.chunk.js.map",
+    "729.4a1f4e8f.chunk.js.map": "/classic-reforged-talent-calculator/static/js/729.4a1f4e8f.chunk.js.map",
     "196.db995429.chunk.css.map": "/classic-reforged-talent-calculator/static/css/196.db995429.chunk.css.map",
     "196.e7e420d7.chunk.js.map": "/classic-reforged-talent-calculator/static/js/196.e7e420d7.chunk.js.map",
     "577.db995429.chunk.css.map": "/classic-reforged-talent-calculator/static/css/577.db995429.chunk.css.map",
@@ -73,6 +73,6 @@
   },
   "entrypoints": [
     "static/css/main.0ae4d62a.css",
-    "static/js/main.7be83afc.js"
+    "static/js/main.6ee9691c.js"
   ]
 }
