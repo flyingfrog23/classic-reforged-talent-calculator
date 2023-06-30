@@ -355,9 +355,9 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 15,
         description: talentText`Increases your attack power in Cat, Bear and Dire Bear Forms by ${[
-          50,
-          100,
-          150,
+          67,
+          134,
+          200,
         ]}% of your level.`,
       },
       "Blood Frenzy": {
