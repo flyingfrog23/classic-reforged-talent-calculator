@@ -552,7 +552,7 @@ export const data: TalentData = {
         description: talentText`Gives you a ${[
           35,
           70,
-        ]}% chance to resist interruption caused by damage while channeling Destruction Spells.`,
+        ]}%  chance to resist interruption caused by damage while casting any destruction spell.`,
       },
       "Destructive Reach": {
         name: "Destructive Reach",
