@@ -347,7 +347,7 @@ export const data: TalentData = {
         icon: icons["spell_holy_summonlightwell"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`When activated, your next Holy spell with a casting time of less than 10 sec. becomes an instant cast spell.  (3 min cooldown)`,
+        description: talentText`When activated, your next holy spell with a casting time of less than 10 sec. becomes an instant cast spell.  (3 min cooldown)`,
       },
       "Improved Healing": {
         name: "Improved Healing",
