@@ -398,7 +398,7 @@ export const data: TalentData = {
         icon: icons["ability_hibernation"],
         maxRank: 5,
         reqPoints: 0,
-        description: talentText`Reduces the Mana cost of your instant cast spells by ${[
+        description: talentText`Reduces the Mana cost of your offensive instant cast spells by ${[
           10,
           20,
           30,
