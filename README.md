@@ -1,7 +1,7 @@
 # WoW Classic Reforged Talent Calculator
 
 CSS-grid based talent calculator  
-Usable talent calculator hosted here: https://flyingfrog23.github.io/classic-reforged-talent-calculator/#/
+Usable talent calculator hosted here: https://flyingfrog23.github.io/vanilla-reforged-talent-calculator/#/
 ## Features
 
 - URL encoded app state (for shareable talent builds)
