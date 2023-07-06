@@ -1,4 +1,4 @@
-# WoW Classic Reforged Talent Calculator
+# Vanilla Reforged Talent Calculator
 
 CSS-grid based talent calculator  
 Usable talent calculator hosted here: https://flyingfrog23.github.io/vanilla-reforged-talent-calculator/#/
