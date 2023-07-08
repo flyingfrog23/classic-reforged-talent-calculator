@@ -312,7 +312,7 @@ export const data: TalentData = {
         description: talentText`Increases your movement speed by ${[
           15,
           30,
-        ]}% while outdoors in Cat Form and increases your chance to dodge while in Cat Form by ${[
+        ]}% while outdoors in Cat Form and increases your chance to dodge attacks while in Cat Form by ${[
           2,
           4,
         ]}%.`,
@@ -323,7 +323,7 @@ export const data: TalentData = {
         icon: icons["ability_hunter_pet_bear"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec. (15 sec cooldown)`,
+        description: talentText`Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec. (15 sec. cooldown)`,
       },
       "Sharpened Claws": {
         name: "Sharpened Claws",
