@@ -49,7 +49,7 @@ export const data: TalentData = {
         description: talentText`Gives you a ${[
           50,
           100,
-        ]}% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike. The Focused Casting effect prevents you from losing casting time when taking damage and increases resistance to Interrupt effects by ${[
+        ]}% chance to gain the Focused Casting effect that lasts for 6 sec. after being the victim of a melee or ranged critical strike. The Focused Casting effect prevents you from losing casting time when taking damage and increases resistance to Interrupt effects by ${[
           10,
           20,
         ]}%.`,
@@ -141,7 +141,7 @@ export const data: TalentData = {
         icon: icons["spell_frost_windwalkon"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`When activated increases the critical effect chance of your next spell by 100%. (2 min cooldown)`,
+        description: talentText`When activated increases the critical effect chance of your next spell by 100%. (120 sec. cooldown)`,
       },
       "Force of Will": {
         name: "Force of Will",
@@ -197,7 +197,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Force of Will",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Infuses the target with power, increasing their spell damage and healing by 20%. Lasts 15 sec. (2 min cooldown)`,
+        description: talentText`Infuses the target with power, increasing their spell damage and healing by 20%. Lasts 15 sec. (120 sec. cooldown)`,
       },
     },
   },
@@ -243,7 +243,7 @@ export const data: TalentData = {
         description: talentText`Gives you a ${[
           35,
           70,
-        ]}% chance to avoid interruption caused by damage while casting any holy spell.`,
+        ]}% chance to avoid interruption caused by damage while casting any Holy spell.`,
       },
       "Improved Renew": {
         name: "Improved Renew",
@@ -347,7 +347,7 @@ export const data: TalentData = {
         icon: icons["spell_holy_summonlightwell"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`When activated, your next holy spell with a casting time of less than 10 sec. becomes an instant cast spell.  (3 min cooldown)`,
+        description: talentText`When activated, your next Holy spell with a casting time of less than 10 sec. becomes an instant cast spell.  (180 sec. cooldown)`,
       },
       "Improved Healing": {
         name: "Improved Healing",
@@ -502,7 +502,7 @@ export const data: TalentData = {
         icon: icons["spell_shadow_siphonmana"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Assault the target's mind with Shadow energy, causing 75 Shadow damage over 3 sec and slowing their movement speed by 50%.`,
+        description: talentText`Assault the target's mind with Shadow energy, causing 75 Shadow damage over 3 sec. and slowing their movement speed by 50%.`,
       },
       "Shadow Reach": {
         name: "Shadow Reach",
@@ -549,7 +549,7 @@ export const data: TalentData = {
         reqPoints: 20,
         prereq: "Improved Psychic Scream",
         arrows: [{ dir: "down", from: "c1", to: "e1" }],
-        description: talentText`Silences the target, preventing them from casting spells for 5 sec.  (45 sec cooldown)`,
+        description: talentText`Silences the target, preventing them from casting spells for 5 sec. (45 sec. cooldown)`,
       },
       "Vampiric Embrace": {
         name: "Vampiric Embrace",
@@ -557,7 +557,7 @@ export const data: TalentData = {
         icon: icons["spell_shadow_unsummonbuilding"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 1 min. (10 sec cooldown)`,
+        description: talentText`Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 60 sec. (10 sec. cooldown)`,
       },
       "Improved Vampiric Embrace": {
         name: "Improved Vampiric Embrace",
