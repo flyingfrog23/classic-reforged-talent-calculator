@@ -1,4 +1,4 @@
-import { TalentData } from "../../TalentContext";
+.import { TalentData } from "../../TalentContext";
 import { talentText, requireAll } from "../../utils";
 
 const backgrounds = requireAll(
@@ -159,7 +159,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_enchantarmor"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. (3 min cooldown)`,
+        description: talentText`When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. (180 sec. cooldown)`,
       },
       "Arcane Mind": {
         name: "Arcane Mind",
@@ -199,7 +199,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Arcane Instability",
         arrows: [{ dir: "down", from: "f2", to: "g2" }],
-        description: talentText`When activated, your spells deal 30% more damage while costing 30% more mana to cast. This effect lasts 15 sec. (3 min cooldown)`,
+        description: talentText`When activated, your spells deal 30% more damage while costing 30% more mana to cast. This effect lasts 15 sec. (180 sec. cooldown)`,
       },
     },
   },
@@ -373,7 +373,7 @@ export const data: TalentData = {
         reqPoints: 20,
         prereq: "Pyroblast",
         arrows: [{ dir: "down", from: "c3", to: "e3" }],
-        description: talentText`A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 154 to 187 Fire damage, and dazing them for 6 sec. (45 sec cooldown)`,
+        description: talentText`A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 154 to 187 Fire damage, and dazing them for 6 sec. (45 sec. cooldown)`,
       },
       "Fire Power": {
         name: "Fire Power",
@@ -397,7 +397,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Critical Mass",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 critical strikes with Fire spells. (2 min cooldown)`,
+        description: talentText`When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 critical strikes with Fire spells. (120 sec. cooldown)`,
       },
     },
   },
@@ -614,7 +614,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Ice Block",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Instantly sheilds you, absorbing 455 damage. Lasts 1 min. While the shield holds, spells will not be interrupted. (30 sec cooldown)`,
+        description: talentText`Instantly sheilds you, absorbing 455 damage. Lasts 1 min. While the shield holds, spells will not be interrupted. (30 sec. cooldown)`,
       },
     },
   },
