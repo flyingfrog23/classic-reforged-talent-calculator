@@ -341,7 +341,7 @@ export const data: TalentData = {
         icon: icons["ability_golemstormbolt"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`A short range shot that deals 50% wepon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used. (30 sec cooldown)`,
+        description: talentText`A short range shot that deals 50% wepon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used. (30 sec. cooldown)`,
       },
       "Barrage": {
         name: "Barrage",
@@ -592,7 +592,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Killer Instinct",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`A stinging shot that puts the target to sleep for 12 sec. Any damage will cancel the effect. When the target wakes up, the Sting causes 0 Nature damage over 12 sec. Only one Sting per Hunter can be active on the target at a time. (2 min cooldown)`,
+        description: talentText`A stinging shot that puts the target to sleep for 12 sec. Any damage will cancel the effect. When the target wakes up, the Sting causes 0 Nature damage over 12 sec. Only one Sting per Hunter can be active on the target at a time. (120 sec. cooldown)`,
       },
     },
   },
