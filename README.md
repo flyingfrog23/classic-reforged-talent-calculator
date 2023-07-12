@@ -1,7 +1,7 @@
 # Vanilla Reforged Talent Calculator
 
 CSS-grid based talent calculator  
-Usable talent calculator hosted here: https://flyingfrog23.github.io/vanilla-reforged-talent-calculator/#/
+Usable talent calculator hosted here: https://vanilla-reforged.github.io/vanilla-reforged-talent-calculator/#/
 
 ## Features
 
